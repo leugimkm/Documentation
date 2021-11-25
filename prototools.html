@@ -1379,6 +1379,14 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-odd"><p>bool</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">bool_input</span><span class="p">()</span>
+<span class="go">yes</span>
+<span class="go">yes is not a valid yes/no response</span>
+<span class="go">t</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">True</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.choice_input">
@@ -1416,6 +1424,17 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">choice_input</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<span class="go">Select one of: a, b, c</span>
+<span class="go">1</span>
+<span class="go">1 is not a valid choice</span>
+<span class="go">Select one of: a, b, c</span>
+<span class="go">a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'a'</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.custom_input">
@@ -1436,6 +1455,13 @@ input is located in between prefix and suffix.</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">custom_input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">,</span> <span class="s2">" years old."</span><span class="p">)</span>
+<span class="go">Age: __ years old.</span>
+<span class="go">Age: 18 years old.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">18</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.date_input">
@@ -1467,6 +1493,16 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">date_input</span><span class="p">()</span>
+<span class="go">12-12-2021</span>
+<span class="go">12-12-2021 is not a valid date</span>
+<span class="go">12/12/2021</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">2021/12/12</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">&lt;class 'datetime.date'&gt;</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.day_input">
@@ -1605,6 +1641,23 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">menu_input</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<span class="go">Select one of the following:</span>
+<span class="go">* a</span>
+<span class="go">* b</span>
+<span class="go">* c</span>
+<span class="go">1</span>
+<span class="go">1 is not a valid choice</span>
+<span class="go">Select one of the following:</span>
+<span class="go">* a</span>
+<span class="go">* b</span>
+<span class="go">* c</span>
+<span class="go">a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'a'</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.month_input">
@@ -1648,6 +1701,12 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">str_input</span><span class="p">(</span><span class="s2">"Enter a string: "</span><span class="p">)</span>
+<span class="go">Enter a string: prototools</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'prototools'</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.time_input">
@@ -1679,6 +1738,16 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">time_input</span><span class="p">()</span>
+<span class="go">1200</span>
+<span class="go">1200 is not a valid time</span>
+<span class="go">12:00</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">12:00:00</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">&lt;class 'datetime.time'&gt;</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.yes_no_input">
@@ -1718,6 +1787,14 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">yes_no_input</span><span class="p">(</span><span class="s2">"Do you like this?"</span><span class="p">)</span>
+<span class="go">Do you like this? Yeah</span>
+<span class="go">Yeah is not a valid yes/no response</span>
+<span class="go">Do you like Python? yes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'yes'</span>
+</pre></div>
+</div>
 </dd></dl>
 </div>
 <div class="section" id="module-prototools.keyboard">
@@ -3234,7 +3311,7 @@ is stripped.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.text_align">
-<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">text_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.text_align" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">text_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.text_align" title="Permalink to this definition">¶</a></dt>
 <dd><p>Similar to Python rjust, ljust and center methods.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3252,6 +3329,37 @@ is stripped.</p></li>
 <p class="rubric">Example</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">text_align</span><span class="p">(</span><span class="s2">"Test"</span><span class="p">)</span>
 <span class="go">======= Test =======</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.utils.textbox">
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">textbox</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bcolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">light</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.textbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a box with a text in it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Text.</p></li>
+<li><p><strong>width</strong> (<em>int</em>) – Width.</p></li>
+<li><p><strong>style</strong> (<em>str</em><em>, </em><em>optional</em>) – Border style.</p></li>
+<li><p><strong>align</strong> (<em>str</em><em>, </em><em>optional</em>) – Alignment of the text.</p></li>
+<li><p><strong>bcolor</strong> (<em>str</em><em>, </em><em>optional</em>) – Border color.</p></li>
+<li><p><strong>ml</strong> (<em>int</em><em>, </em><em>optional</em>) – Margin left.</p></li>
+<li><p><strong>light</strong> (<em>bool</em><em>, </em><em>optional</em>) – Adds padding top and bottom.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Box.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxln</span><span class="p">(</span><span class="n">green</span><span class="p">(</span><span class="s2">"ProtoTools"</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">bcolor</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="go">┌────────────────────────────┐</span>
+<span class="go">│                 ProtoTools │</span>
+<span class="go">└────────────────────────────┘</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -3670,6 +3778,51 @@ ValidatorsException.</p></li>
 <div class="section" id="module-prototools">
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-prototools" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
+<dt id="prototools.Box">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Box</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Box" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
+<p>Optional box section.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>style</strong> (<a class="reference internal" href="#prototools.Style" title="prototools.Style"><em>Style</em></a><em>, </em><em>optional</em>) – Style of the component.</p></li>
+<li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.Dimension" title="prototools.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension.</p></li>
+<li><p><strong>title</strong> (<em>str</em><em>, </em><em>optional</em>) – Title of the header.</p></li>
+<li><p><strong>subtitle</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle of the header.</p></li>
+<li><p><strong>subtitle_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle alignment.</p></li>
+<li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Text to be displayed.</p></li>
+<li><p><strong>text_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Text alignment.</p></li>
+<li><p><strong>textnl</strong> (<em>str</em><em>, </em><em>optional</em>) – Text displayed in newlines.</p></li>
+<li><p><strong>textnl_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Text in newlines alignment.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">t</span> <span class="o">=</span> <span class="s2">"Prototools"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="s2">"... faster development"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">box</span> <span class="o">=</span> <span class="n">Box</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">t</span><span class="p">,</span> <span class="n">subtitle</span><span class="o">=</span><span class="n">s</span><span class="p">,</span> <span class="n">subtitle_align</span><span class="o">=</span><span class="s2">"right"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">render</span><span class="p">(</span><span class="n">box</span><span class="p">)</span>
+<span class="go">┌─────────────────────────────────────────────────┐</span>
+<span class="go">│                                                 │</span>
+<span class="go">│  Prototools                                     │</span>
+<span class="go">│                                                 │</span>
+<span class="go">│                         ... faster development  │</span>
+<span class="go">│                                                 │</span>
+<span class="go">└─────────────────────────────────────────────────┘</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt id="prototools.Box.generate">
+<code class="sig-name descname"><span class="pre">generate</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Box.generate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the component.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>Generator[str, str, None]</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
 <dt id="prototools.Counter">
 <em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Counter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Counter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -3692,6 +3845,36 @@ Call 2 of 'update'
 Updated!
 Call 3 of 'update'
 Updated!
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.Dimension">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Dimension</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Dimension" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Width and height of a component.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>int</em>) – Width of the component, in columns.</p></li>
+<li><p><strong>height</strong> (<em>int</em>) – Height of the component, in rows.</p></li>
+<li><p><strong>dimension</strong> (<a class="reference internal" href="#prototools.Dimension" title="prototools.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – An existing Dimension from
+which to duplicate the height and width.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dimension</span> <span class="o">=</span> <span class="n">Dimension</span><span class="p">(</span><span class="mi">40</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dimension</span><span class="o">.</span><span class="n">width</span>
+<span class="go">40</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dimension</span><span class="o">.</span><span class="n">height</span>
+<span class="go">20</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">other_dimension</span> <span class="o">=</span> <span class="n">Dimension</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">other_dimension</span>
+<span class="go">0x0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new_dimension</span> <span class="o">=</span> <span class="n">Dimension</span><span class="p">(</span><span class="n">dimension</span><span class="o">=</span><span class="n">dimension</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new_dimension</span>
+<span class="go">40x20</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -4417,6 +4600,31 @@ newline character.</p>
 </dd></dl>
 </dd></dl>
 <dl class="py class">
+<dt id="prototools.Style">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Style</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">margin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Specify all menu styling (margins, paddings and borders).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>margin</strong> (<a class="reference internal" href="#prototools.components.Margin" title="prototools.components.Margin"><em>Margin</em></a><em>, </em><em>optional</em>) – Menu margin.</p></li>
+<li><p><strong>padding</strong> (<a class="reference internal" href="#prototools.components.Padding" title="prototools.components.Padding"><em>Padding</em></a><em>, </em><em>optional</em>) – Menu padding.</p></li>
+<li><p><strong>border_type</strong> (<em>str</em><em>, </em><em>optional</em>) – Type of menu border.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">style</span> <span class="o">=</span> <span class="n">Style</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">style</span><span class="o">.</span><span class="n">margin</span><span class="o">.</span><span class="n">left</span>
+<span class="go">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">style</span><span class="o">.</span><span class="n">border</span><span class="o">.</span><span class="n">type</span>
+<span class="go">light</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">style</span><span class="o">.</span><span class="n">paddin</span><span class="o">.</span><span class="n">bottom</span>
+<span class="go">1</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py class">
 <dt id="prototools.Submenu">
 <em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Submenu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">submenu</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">should_exit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Submenu" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.menu.Item" title="prototools.menu.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.menu.Item</span></code></a></p>
@@ -4550,6 +4758,14 @@ loop.</p></li>
 </div>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.black">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">black</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.black" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
+<dt id="prototools.blue">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">blue</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.blue" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
 <dt id="prototools.bool_input">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">bool_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">true_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">false_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.bool_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prompts the user to enter a True/False response.</p>
@@ -4585,6 +4801,14 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-odd"><p>bool</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">bool_input</span><span class="p">()</span>
+<span class="go">yes</span>
+<span class="go">yes is not a valid yes/no response</span>
+<span class="go">t</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">True</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.choice_input">
@@ -4622,6 +4846,17 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">choice_input</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<span class="go">Select one of: a, b, c</span>
+<span class="go">1</span>
+<span class="go">1 is not a valid choice</span>
+<span class="go">Select one of: a, b, c</span>
+<span class="go">a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'a'</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.chunker">
@@ -4718,7 +4953,18 @@ input is located in between prefix and suffix.</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">custom_input</span><span class="p">(</span><span class="s2">"Age: "</span><span class="p">,</span> <span class="s2">" years old."</span><span class="p">)</span>
+<span class="go">Age: __ years old.</span>
+<span class="go">Age: 18 years old.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">18</span>
+</pre></div>
+</div>
 </dd></dl>
+<dl class="py function">
+<dt id="prototools.cyan">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">cyan</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.cyan" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 <dl class="py function">
 <dt id="prototools.date_input">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">date_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">formats</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.date_input" title="Permalink to this definition">¶</a></dt>
@@ -4749,6 +4995,16 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">date_input</span><span class="p">()</span>
+<span class="go">12-12-2021</span>
+<span class="go">12-12-2021 is not a valid date</span>
+<span class="go">12/12/2021</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">2021/12/12</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">&lt;class 'datetime.date'&gt;</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.debug">
@@ -4834,6 +5090,10 @@ the user’s input and returns the new value as the input.</p></li>
 </pre></div>
 </div>
 </dd></dl>
+<dl class="py function">
+<dt id="prototools.green">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">green</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.green" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 <dl class="py function">
 <dt id="prototools.grouper">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">grouper</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fillvalue</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.grouper" title="Permalink to this definition">¶</a></dt>
@@ -4926,6 +5186,10 @@ the user’s input and returns the new value as the input.</p></li>
 </div>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.magenta">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">magenta</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.magenta" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
 <dt id="prototools.main_loop">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">main_loop</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.main_loop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call a function until validation is False.</p>
@@ -5016,6 +5280,23 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">options</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">menu_input</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+<span class="go">Select one of the following:</span>
+<span class="go">* a</span>
+<span class="go">* b</span>
+<span class="go">* c</span>
+<span class="go">1</span>
+<span class="go">1 is not a valid choice</span>
+<span class="go">Select one of the following:</span>
+<span class="go">* a</span>
+<span class="go">* b</span>
+<span class="go">* c</span>
+<span class="go">a</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'a'</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.obsolete">
@@ -5114,6 +5395,10 @@ like to see more.</p></li>
 </div>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.red">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">red</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.red" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
 <dt id="prototools.register">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">register</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.register" title="Permalink to this definition">¶</a></dt>
 <dd><p>Register a function as a plug-in.</p>
@@ -5138,6 +5423,19 @@ like to see more.</p></li>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>F</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.render">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">render</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">component</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render a component.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>component</strong> (<a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><em>Component</em></a>) – Component to be rendered.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -5353,6 +5651,12 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">str_input</span><span class="p">(</span><span class="s2">"Enter a string: "</span><span class="p">)</span>
+<span class="go">Enter a string: prototools</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'prototools'</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.strip_ansi">
@@ -5459,7 +5763,7 @@ right.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.text_align">
-<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">text_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.text_align" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">text_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.text_align" title="Permalink to this definition">¶</a></dt>
 <dd><p>Similar to Python rjust, ljust and center methods.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -5477,6 +5781,37 @@ right.</p></li>
 <p class="rubric">Example</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">text_align</span><span class="p">(</span><span class="s2">"Test"</span><span class="p">)</span>
 <span class="go">======= Test =======</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.textbox">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">textbox</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bcolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">light</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.textbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draw a box with a text in it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – Text.</p></li>
+<li><p><strong>width</strong> (<em>int</em>) – Width.</p></li>
+<li><p><strong>style</strong> (<em>str</em><em>, </em><em>optional</em>) – Border style.</p></li>
+<li><p><strong>align</strong> (<em>str</em><em>, </em><em>optional</em>) – Alignment of the text.</p></li>
+<li><p><strong>bcolor</strong> (<em>str</em><em>, </em><em>optional</em>) – Border color.</p></li>
+<li><p><strong>ml</strong> (<em>int</em><em>, </em><em>optional</em>) – Margin left.</p></li>
+<li><p><strong>light</strong> (<em>bool</em><em>, </em><em>optional</em>) – Adds padding top and bottom.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Box.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxln</span><span class="p">(</span><span class="n">green</span><span class="p">(</span><span class="s2">"ProtoTools"</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">bcolor</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
+<span class="go">┌────────────────────────────┐</span>
+<span class="go">│                 ProtoTools │</span>
+<span class="go">└────────────────────────────┘</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -5551,6 +5886,16 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">time_input</span><span class="p">()</span>
+<span class="go">1200</span>
+<span class="go">1200 is not a valid time</span>
+<span class="go">12:00</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">12:00:00</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">&lt;class 'datetime.time'&gt;</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.timer">
@@ -5909,6 +6254,14 @@ ValidatorsException.</p></li>
 </dl>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.white">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">white</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.white" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
+<dt id="prototools.yellow">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">yellow</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.yellow" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
 <dt id="prototools.yes_no_input">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">yes_no_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yes_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.yes_no_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prompt the user to enter a yes/no response.</p>
@@ -5946,6 +6299,14 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-even"><p>str</p>
 </dd>
 </dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">yes_no_input</span><span class="p">(</span><span class="s2">"Do you like this?"</span><span class="p">)</span>
+<span class="go">Do you like this? Yeah</span>
+<span class="go">Yeah is not a valid yes/no response</span>
+<span class="go">Do you like Python? yes</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span>
+<span class="go">'yes'</span>
+</pre></div>
+</div>
 </dd></dl>
 </div>
 </div>
