@@ -345,7 +345,7 @@ defaults to light.</p>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Box">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Box</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Box" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Box</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Box" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
 <p>Optional box section.</p>
 <dl class="field-list simple">
@@ -353,6 +353,7 @@ defaults to light.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>style</strong> (<a class="reference internal" href="#prototools.components.Style" title="prototools.components.Style"><em>Style</em></a><em>, </em><em>optional</em>) – Style of the component.</p></li>
 <li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.components.Dimension" title="prototools.components.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension.</p></li>
+<li><p><strong>color</strong> (<em>Color</em><em>, </em><em>optional</em>) – Color of the component.</p></li>
 <li><p><strong>title</strong> (<em>str</em><em>, </em><em>optional</em>) – Title of the header.</p></li>
 <li><p><strong>subtitle</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle of the header.</p></li>
 <li><p><strong>subtitle_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle alignment.</p></li>
@@ -390,7 +391,7 @@ defaults to light.</p>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Component">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Component</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Component" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Component</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Component" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Base class for menu components.</p>
 <dl class="field-list simple">
@@ -400,6 +401,7 @@ defaults to light.</p>
 <li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.components.Dimension" title="prototools.components.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension
 (width x height) for the menu. Defaults to width=80
 and height=40.</p></li>
+<li><p><strong>color</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Color function for the component.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Raises</dt>
@@ -490,9 +492,18 @@ which to duplicate the height and width.</p></li>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Footer">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Footer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Footer" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Footer</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Footer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
 <p>Menu footer section.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>style</strong> (<a class="reference internal" href="#prototools.components.Style" title="prototools.components.Style"><em>Style</em></a><em>, </em><em>optional</em>) – Style of the component.</p></li>
+<li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.components.Dimension" title="prototools.components.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension.</p></li>
+<li><p><strong>color</strong> (<em>Color</em><em>, </em><em>optional</em>) – Color of the component.</p></li>
+</ul>
+</dd>
+</dl>
 <p class="rubric">Example</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">footer</span> <span class="o">=</span> <span class="n">Footer</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">render</span><span class="p">(</span><span class="n">footer</span><span class="p">)</span>
@@ -525,7 +536,7 @@ which to duplicate the height and width.</p></li>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Header">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Header</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Header" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Header</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Header" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
 <p>Menu header section.</p>
 <dl class="field-list simple">
@@ -533,6 +544,7 @@ which to duplicate the height and width.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>style</strong> (<a class="reference internal" href="#prototools.components.Style" title="prototools.components.Style"><em>Style</em></a><em>, </em><em>optional</em>) – Style of the component.</p></li>
 <li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.components.Dimension" title="prototools.components.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension.</p></li>
+<li><p><strong>color</strong> (<em>Color</em><em>, </em><em>optional</em>) – Color of the component.</p></li>
 <li><p><strong>title</strong> (<em>str</em><em>, </em><em>optional</em>) – Title of the header.</p></li>
 <li><p><strong>subtitle</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle of the header.</p></li>
 <li><p><strong>subtitle_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle alignment.</p></li>
@@ -563,7 +575,7 @@ to False.</p></li>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Items">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Items</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Items" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Items</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Items" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
 <p>Menu section for displayin the menu items.</p>
 <dl class="field-list simple">
@@ -571,6 +583,7 @@ to False.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>style</strong> (<a class="reference internal" href="#prototools.components.Style" title="prototools.components.Style"><em>Style</em></a><em>, </em><em>optional</em>) – Style of the component.</p></li>
 <li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.components.Dimension" title="prototools.components.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension.</p></li>
+<li><p><strong>color</strong> (<em>Color</em><em>, </em><em>optional</em>) – Color of the component.</p></li>
 <li><p><strong>items</strong> (<em>list</em><em>, </em><em>optional</em>) – Items of the menu to be displayed.</p></li>
 <li><p><strong>items_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Items alignment.</p></li>
 </ul>
@@ -702,6 +715,18 @@ shown.</p></li>
 <span class="go">1</span>
 </pre></div>
 </div>
+<dl class="py attribute">
+<dt id="id0">
+<code class="sig-name descname"><span class="pre">bottom</span></code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="id1">
+<code class="sig-name descname"><span class="pre">left</span></code><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="id2">
+<code class="sig-name descname"><span class="pre">right</span></code><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 <dl class="py method">
 <dt id="prototools.components.Margin.set_defaults">
 <code class="sig-name descname"><span class="pre">set_defaults</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Margin.set_defaults" title="Permalink to this definition">¶</a></dt>
@@ -711,6 +736,10 @@ shown.</p></li>
 </dd>
 </dl>
 </dd></dl>
+<dl class="py attribute">
+<dt id="id3">
+<code class="sig-name descname"><span class="pre">top</span></code><a class="headerlink" href="#id3" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Padding">
@@ -765,6 +794,18 @@ shown.</p></li>
 <span class="go">1</span>
 </pre></div>
 </div>
+<dl class="py attribute">
+<dt id="id4">
+<code class="sig-name descname"><span class="pre">bottom</span></code><a class="headerlink" href="#id4" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="id5">
+<code class="sig-name descname"><span class="pre">left</span></code><a class="headerlink" href="#id5" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="id6">
+<code class="sig-name descname"><span class="pre">right</span></code><a class="headerlink" href="#id6" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 <dl class="py method">
 <dt id="prototools.components.Padding.set_defaults">
 <code class="sig-name descname"><span class="pre">set_defaults</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Padding.set_defaults" title="Permalink to this definition">¶</a></dt>
@@ -774,10 +815,14 @@ shown.</p></li>
 </dd>
 </dl>
 </dd></dl>
+<dl class="py attribute">
+<dt id="id7">
+<code class="sig-name descname"><span class="pre">top</span></code><a class="headerlink" href="#id7" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Prompt">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Prompt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Prompt" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Prompt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Prompt" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
 <p>Menu prompt for user input.</p>
 <dl class="field-list simple">
@@ -944,7 +989,7 @@ newline character.</p>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.components.Text">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Text</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_top</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Text" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.components.</span></code><code class="sig-name descname"><span class="pre">Text</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_top</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.components.Text" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
 <p>Menu text block section.</p>
 <dl class="field-list simple">
@@ -952,6 +997,7 @@ newline character.</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>style</strong> (<a class="reference internal" href="#prototools.components.Style" title="prototools.components.Style"><em>Style</em></a><em>, </em><em>optional</em>) – Style of the component.</p></li>
 <li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.components.Dimension" title="prototools.components.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension.</p></li>
+<li><p><strong>color</strong> (<em>Color</em><em>, </em><em>optional</em>) – Color of the component.</p></li>
 <li><p><strong>text</strong> (<em>str</em><em>, </em><em>optional</em>) – Text to be displayed.</p></li>
 <li><p><strong>text_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Text alignment.</p></li>
 <li><p><strong>show_top</strong> (<em>bool</em>) – If True shows the top border, defaults
@@ -1939,15 +1985,20 @@ by default, for no pause in between presses.</p></li>
 <em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">Builder</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Builder class for generating the menu.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.components.Dimension" title="prototools.components.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Max dimension of the menu.</p>
-</dd>
-</dl>
 <dl class="py method">
 <dt id="prototools.menu.Builder.clear_data">
 <code class="sig-name descname"><span class="pre">clear_data</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.clear_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Clear data from previous menu.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.epilogue">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">epilogue</span></code><a class="headerlink" href="#prototools.menu.Builder.epilogue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Epilogue property.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.footer">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">footer</span></code><a class="headerlink" href="#prototools.menu.Builder.footer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Footer property.</p>
 </dd></dl>
 <dl class="py method">
 <dt id="prototools.menu.Builder.format">
@@ -1981,6 +2032,30 @@ by default, for no pause in between presses.</p></li>
 </dl>
 </dd></dl>
 <dl class="py method">
+<dt id="prototools.menu.Builder.header">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">header</span></code><a class="headerlink" href="#prototools.menu.Builder.header" title="Permalink to this definition">¶</a></dt>
+<dd><p>Header property.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.prologue">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">prologue</span></code><a class="headerlink" href="#prototools.menu.Builder.prologue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prologue property.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.prompt">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">prompt</span></code><a class="headerlink" href="#prototools.menu.Builder.prompt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prompt property.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_color">
+<code class="sig-name descname"><span class="pre">set_color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>Callable</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
 <dt id="prototools.menu.Builder.set_dimension">
 <code class="sig-name descname"><span class="pre">set_dimension</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_dimension" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the dimension of the menu.</p>
@@ -1997,11 +2072,111 @@ by default, for no pause in between presses.</p></li>
 </dl>
 </dd></dl>
 <dl class="py method">
+<dt id="prototools.menu.Builder.set_epilogue_align">
+<code class="sig-name descname"><span class="pre">set_epilogue_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">align</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_epilogue_align" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the alignment of the epilogue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>align</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_epilogue_paddings">
+<code class="sig-name descname"><span class="pre">set_epilogue_paddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_epilogue_paddings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the paddings of the epilogue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>padding</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_footer_padding">
+<code class="sig-name descname"><span class="pre">set_footer_padding</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_footer_padding" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the paddings of the footer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>padding</strong> (<em>int</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_header_paddings">
+<code class="sig-name descname"><span class="pre">set_header_paddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_header_paddings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the paddings of the header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>padding</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_items_paddings">
+<code class="sig-name descname"><span class="pre">set_items_paddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_items_paddings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the paddings of the items.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>padding</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_margins">
+<code class="sig-name descname"><span class="pre">set_margins</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">margin</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_margins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the margins.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>margin</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_paddings">
+<code class="sig-name descname"><span class="pre">set_paddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_paddings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the paddings.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>padding</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_prologue_align">
+<code class="sig-name descname"><span class="pre">set_prologue_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">align</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_prologue_align" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the alignment of the prologue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>align</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_prologue_paddings">
+<code class="sig-name descname"><span class="pre">set_prologue_paddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_prologue_paddings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the paddings of the prologue.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>padding</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
 <dt id="prototools.menu.Builder.set_prompt">
 <code class="sig-name descname"><span class="pre">set_prompt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_prompt" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>prompt</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_separators">
+<code class="sig-name descname"><span class="pre">set_separators</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_separators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the separators.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
 </dd>
 </dl>
 </dd></dl>
@@ -2015,10 +2190,104 @@ by default, for no pause in between presses.</p></li>
 </dd>
 </dl>
 </dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_subtitle_align">
+<code class="sig-name descname"><span class="pre">set_subtitle_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">align</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_subtitle_align" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the alignment of the subtitle.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>align</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.set_title_align">
+<code class="sig-name descname"><span class="pre">set_title_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'center'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.set_title_align" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the title align.</p>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.show_epilogue_bottom">
+<code class="sig-name descname"><span class="pre">show_epilogue_bottom</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.show_epilogue_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show/hide the epilogue bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.show_epilogue_top">
+<code class="sig-name descname"><span class="pre">show_epilogue_top</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.show_epilogue_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show/hide the epilogue top.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.show_header_bottom">
+<code class="sig-name descname"><span class="pre">show_header_bottom</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.show_header_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show/hide the header bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.show_item_bottom">
+<code class="sig-name descname"><span class="pre">show_item_bottom</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.show_item_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item_text</strong> (<em>str</em>) – </p></li>
+<li><p><strong>flag</strong> (<em>bool</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.show_item_top">
+<code class="sig-name descname"><span class="pre">show_item_top</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.show_item_top" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>item_text</strong> (<em>str</em>) – </p></li>
+<li><p><strong>flag</strong> (<em>bool</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.show_prologue_bottom">
+<code class="sig-name descname"><span class="pre">show_prologue_bottom</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.show_prologue_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show/hide the prologue bottom.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.show_prologue_top">
+<code class="sig-name descname"><span class="pre">show_prologue_top</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Builder.show_prologue_top" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show/hide the prologue top.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Builder.style">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">style</span></code><a class="headerlink" href="#prototools.menu.Builder.style" title="Permalink to this definition">¶</a></dt>
+<dd><p>Style property.</p>
+</dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.menu.Exit">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">Exit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Exit" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">Exit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Exit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.menu.Item" title="prototools.menu.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.menu.Item</span></code></a></p>
 <p>Used to exit the current menu.</p>
 <dl class="field-list simple">
@@ -2026,6 +2295,7 @@ by default, for no pause in between presses.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>text</strong> (<em>str</em>) – Text to be shown, defaults ‘Exit’.</p></li>
 <li><p><strong>menu</strong> (<a class="reference internal" href="#prototools.menu.Menu" title="prototools.menu.Menu"><em>Menu</em></a><em>, </em><em>optional</em>) – Menu to which this item belongs.</p></li>
+<li><p><strong>color</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Returns a colored string.</p></li>
 </ul>
 </dd>
 </dl>
@@ -2134,7 +2404,7 @@ item’s action is done.</p></li>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.menu.Item">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">Item</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">should_exit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Item" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">Item</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">should_exit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Item" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Generic menu item.</p>
 <dl class="field-list simple">
@@ -2144,6 +2414,7 @@ item’s action is done.</p></li>
 <li><p><strong>menu</strong> (<a class="reference internal" href="#prototools.menu.Menu" title="prototools.menu.Menu"><em>Menu</em></a><em>, </em><em>optional</em>) – The menu to which this item belongs.</p></li>
 <li><p><strong>should_exit</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the menu should exit once
 this item’s action is done.</p></li>
+<li><p><strong>color</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Returns a colored string.</p></li>
 </ul>
 </dd>
 </dl>
@@ -2231,7 +2502,7 @@ this item’s action is done.</p></li>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.menu.Menu">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">Menu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Menu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prologue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epilogue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">builder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_exit_option</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exit_option_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrow_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">Menu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Menu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prologue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epilogue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">builder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_exit_option</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exit_option_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exit_option_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrow_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Menu that allows the user to select an option.</p>
 <dl class="field-list simple">
@@ -2352,6 +2623,23 @@ recently selected.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>items</strong> (<em>list</em>) – Items to be added.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Menu.add_option">
+<code class="sig-name descname"><span class="pre">add_option</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.add_option" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an option to the menu.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – </p></li>
+<li><p><strong>function</strong> (<em>Callable</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Any</em>) – </p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
@@ -2629,6 +2917,42 @@ None.</p>
 </dl>
 </dd></dl>
 <dl class="py method">
+<dt id="prototools.menu.Menu.set_item_color">
+<code class="sig-name descname"><span class="pre">set_item_color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.set_item_color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>Callable</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Menu.set_margins">
+<code class="sig-name descname"><span class="pre">set_margins</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">margins</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.set_margins" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>margins</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Menu.set_paddings">
+<code class="sig-name descname"><span class="pre">set_paddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paddings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.set_paddings" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>paddings</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
 <dt id="prototools.menu.Menu.set_prompt">
 <code class="sig-name descname"><span class="pre">set_prompt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.set_prompt" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
@@ -2641,11 +2965,71 @@ None.</p>
 </dl>
 </dd></dl>
 <dl class="py method">
+<dt id="prototools.menu.Menu.set_separators">
+<code class="sig-name descname"><span class="pre">set_separators</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.set_separators" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
 <dt id="prototools.menu.Menu.set_style">
 <code class="sig-name descname"><span class="pre">set_style</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">border_style</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.set_style" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>border_style</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Menu.set_subtitle_align">
+<code class="sig-name descname"><span class="pre">set_subtitle_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">align</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.set_subtitle_align" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>align</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Menu.settings">
+<code class="sig-name descname"><span class="pre">settings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paddings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items_paddings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">footer_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.settings" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dimension</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>style</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>color</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>options_color</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>separators</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>subtitle_align</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>margins</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>paddings</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>items_paddings</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>footer_padding</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>header_bottom</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.menu.Menu.show_header_bottom">
+<code class="sig-name descname"><span class="pre">show_header_bottom</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.Menu.show_header_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
@@ -2794,6 +3178,44 @@ for this class.</p>
 </dd>
 </dl>
 </dd></dl>
+<dl class="py function">
+<dt id="prototools.menu.get_option_posix">
+<code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">get_option_posix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.get_option_posix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the menu item by using arrow keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>options</strong> (<em>Sequence</em>) – Sequence of menu items</p></li>
+<li><p><strong>menu</strong> (<a class="reference internal" href="#prototools.menu.Menu" title="prototools.menu.Menu"><em>Menu</em></a>) – Menu</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Position of the menu item.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.menu.get_option_win">
+<code class="sig-prename descclassname"><span class="pre">prototools.menu.</span></code><code class="sig-name descname"><span class="pre">get_option_win</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">options</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu.get_option_win" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the menu item by using arrow keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>options</strong> (<em>Sequence</em>) – Sequence of menu items</p></li>
+<li><p><strong>menu</strong> (<a class="reference internal" href="#prototools.menu.Menu" title="prototools.menu.Menu"><em>Menu</em></a>) – Menu</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Position of the menu item.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
 </div>
 <div class="section" id="module-prototools.protodb">
 <span id="prototools-protodb-module"></span><h2>prototools.protodb module<a class="headerlink" href="#module-prototools.protodb" title="Permalink to this headline">¶</a></h2>
@@ -2901,12 +3323,12 @@ for this class.</p>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.tabulate.tabulate">
-<code class="sig-prename descclassname"><span class="pre">prototools.tabulate.</span></code><code class="sig-name descname"><span class="pre">tabulate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.tabulate.tabulate" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.tabulate.</span></code><code class="sig-name descname"><span class="pre">tabulate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.tabulate.tabulate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Display data in a table.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data</strong> (<em>sequence</em>) – Data to be shown.</p></li>
+<li><p><strong>data</strong> (<em>Sequence</em>) – Data to be shown.</p></li>
 <li><p><strong>headers</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Optional header of the table.</p></li>
 <li><p><strong>headless</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, the data has no header. If
 False, the first row of the data becomes the header.
@@ -2917,7 +3339,7 @@ Defaults False.</p></li>
 the padding left, padding right, margin left and margin
 right.</p></li>
 <li><p><strong>border_type</strong> (<em>str</em><em>, </em><em>optional</em>) – Type of the border.</p></li>
-<li><p><strong>align</strong> (<em>str</em><em>, </em><em>optional</em>) – Alignment (left, center, right).</p></li>
+<li><p><strong>align</strong> (<em>str</em><em>, </em><em>optional</em>) – Alignment can be left, center or right.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -2927,6 +3349,7 @@ right.</p></li>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<p>TODO: add example</p>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.tabulate.to_list">
@@ -3172,7 +3595,7 @@ like to see more.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.progressbar">
-<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">progressbar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spinvar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.progressbar" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">progressbar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spinvar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spinvar_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.progressbar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Display a progress bar.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3183,6 +3606,9 @@ like to see more.</p></li>
 <li><p><strong>spinvar</strong> (<em>bool</em><em>, </em><em>optional</em>) – Display a spinner.</p></li>
 <li><p><strong>per</strong> (<em>bool</em><em>, </em><em>optional</em>) – Display the percentage.</p></li>
 <li><p><strong>units</strong> (<em>bool</em><em>, </em><em>optional</em>) – Display the units.</p></li>
+<li><p><strong>spinvar_color</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>bg</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>fg</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
@@ -3202,7 +3628,7 @@ like to see more.</p></li>
 <dd></dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.show_matrix">
-<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">show_matrix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">borderless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.show_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">show_matrix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">borderless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.show_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prints a matrix.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3212,10 +3638,11 @@ like to see more.</p></li>
 <li><p><strong>style</strong> (<em>str</em><em>, </em><em>optional</em>) – Style of the matrix. Defaults to None.</p></li>
 <li><p><strong>borderless</strong> (<em>bool</em><em>, </em><em>optional</em>) – Show the matrix without borders.
 Defaults to False.</p></li>
-<li><p><strong>show_index</strong> (<em>bool</em><em>, </em><em>optional</em>) – Show the index of the matrix.
+<li><p><strong>index</strong> (<em>bool</em><em>, </em><em>optional</em>) – Show the index of the matrix.
 Defaults to False.</p></li>
 <li><p><strong>sep</strong> (<em>int</em><em>, </em><em>optional</em>) – Separation between the columns. Defaults
 to 1.</p></li>
+<li><p><strong>color</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Color of the matrix. Defaults to None.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
@@ -3334,7 +3761,7 @@ is stripped.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.textbox">
-<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">textbox</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bcolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">light</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.textbox" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">textbox</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'center'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bcolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">light</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.textbox" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw a box with a text in it.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -3358,7 +3785,7 @@ is stripped.</p></li>
 <p class="rubric">Example</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxln</span><span class="p">(</span><span class="n">green</span><span class="p">(</span><span class="s2">"ProtoTools"</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">bcolor</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
 <span class="go">┌────────────────────────────┐</span>
-<span class="go">│                 ProtoTools │</span>
+<span class="go">│         ProtoTools         │</span>
 <span class="go">└────────────────────────────┘</span>
 </pre></div>
 </div>
@@ -3779,7 +4206,7 @@ ValidatorsException.</p></li>
 <span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-prototools" title="Permalink to this headline">¶</a></h2>
 <dl class="py class">
 <dt id="prototools.Box">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Box</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Box" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Box</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">textnl_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Box" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.components.Component" title="prototools.components.Component"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.components.Component</span></code></a></p>
 <p>Optional box section.</p>
 <dl class="field-list simple">
@@ -3787,6 +4214,7 @@ ValidatorsException.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>style</strong> (<a class="reference internal" href="#prototools.Style" title="prototools.Style"><em>Style</em></a><em>, </em><em>optional</em>) – Style of the component.</p></li>
 <li><p><strong>max_dimension</strong> (<a class="reference internal" href="#prototools.Dimension" title="prototools.Dimension"><em>Dimension</em></a><em>, </em><em>optional</em>) – Maximum dimension.</p></li>
+<li><p><strong>color</strong> (<em>Color</em><em>, </em><em>optional</em>) – Color of the component.</p></li>
 <li><p><strong>title</strong> (<em>str</em><em>, </em><em>optional</em>) – Title of the header.</p></li>
 <li><p><strong>subtitle</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle of the header.</p></li>
 <li><p><strong>subtitle_align</strong> (<em>str</em><em>, </em><em>optional</em>) – Subtitle alignment.</p></li>
@@ -3880,7 +4308,7 @@ which to duplicate the height and width.</p></li>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.Exit">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Exit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Exit" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Exit</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">menu</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Exit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#prototools.menu.Item" title="prototools.menu.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.menu.Item</span></code></a></p>
 <p>Used to exit the current menu.</p>
 <dl class="field-list simple">
@@ -3888,6 +4316,7 @@ which to duplicate the height and width.</p></li>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>text</strong> (<em>str</em>) – Text to be shown, defaults ‘Exit’.</p></li>
 <li><p><strong>menu</strong> (<a class="reference internal" href="#prototools.Menu" title="prototools.Menu"><em>Menu</em></a><em>, </em><em>optional</em>) – Menu to which this item belongs.</p></li>
+<li><p><strong>color</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Returns a colored string.</p></li>
 </ul>
 </dd>
 </dl>
@@ -3958,7 +4387,7 @@ item’s action is done.</p></li>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.Menu">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Menu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Menu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prologue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epilogue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">builder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_exit_option</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exit_option_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrow_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Menu</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Menu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prologue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epilogue_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">screen</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">builder</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_exit_option</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exit_option_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Exit'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exit_option_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">arrow_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>Menu that allows the user to select an option.</p>
 <dl class="field-list simple">
@@ -4079,6 +4508,23 @@ recently selected.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>items</strong> (<em>list</em>) – Items to be added.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Menu.add_option">
+<code class="sig-name descname"><span class="pre">add_option</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.add_option" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add an option to the menu.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – </p></li>
+<li><p><strong>function</strong> (<em>Callable</em>) – </p></li>
+<li><p><strong>args</strong> (<em>Any</em>) – </p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
@@ -4356,6 +4802,42 @@ None.</p>
 </dl>
 </dd></dl>
 <dl class="py method">
+<dt id="prototools.Menu.set_item_color">
+<code class="sig-name descname"><span class="pre">set_item_color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.set_item_color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>Callable</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Menu.set_margins">
+<code class="sig-name descname"><span class="pre">set_margins</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">margins</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.set_margins" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>margins</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Menu.set_paddings">
+<code class="sig-name descname"><span class="pre">set_paddings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">paddings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.set_paddings" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>paddings</strong> (<em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
 <dt id="prototools.Menu.set_prompt">
 <code class="sig-name descname"><span class="pre">set_prompt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.set_prompt" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
@@ -4368,11 +4850,71 @@ None.</p>
 </dl>
 </dd></dl>
 <dl class="py method">
+<dt id="prototools.Menu.set_separators">
+<code class="sig-name descname"><span class="pre">set_separators</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.set_separators" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
 <dt id="prototools.Menu.set_style">
 <code class="sig-name descname"><span class="pre">set_style</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">border_style</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.set_style" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>border_style</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Menu.set_subtitle_align">
+<code class="sig-name descname"><span class="pre">set_subtitle_align</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">align</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.set_subtitle_align" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>align</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Menu.settings">
+<code class="sig-name descname"><span class="pre">settings</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dimension</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">options_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">margins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">paddings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">items_paddings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">footer_padding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_bottom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.settings" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dimension</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>style</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>color</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>options_color</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>separators</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+<li><p><strong>subtitle_align</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>margins</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>paddings</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>items_paddings</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>, </em><em>int</em><em>]</em><em>]</em>) – </p></li>
+<li><p><strong>footer_padding</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>header_bottom</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Menu.show_header_bottom">
+<code class="sig-name descname"><span class="pre">show_header_bottom</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">flag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Menu.show_header_bottom" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>flag</strong> (<em>bool</em>) – </p>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>None</p>
@@ -5370,7 +5912,7 @@ like to see more.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.progressbar">
-<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">progressbar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spinvar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.progressbar" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">progressbar</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spinvar</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spinvar_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">per</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">units</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.progressbar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Display a progress bar.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -5381,6 +5923,9 @@ like to see more.</p></li>
 <li><p><strong>spinvar</strong> (<em>bool</em><em>, </em><em>optional</em>) – Display a spinner.</p></li>
 <li><p><strong>per</strong> (<em>bool</em><em>, </em><em>optional</em>) – Display the percentage.</p></li>
 <li><p><strong>units</strong> (<em>bool</em><em>, </em><em>optional</em>) – Display the units.</p></li>
+<li><p><strong>spinvar_color</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>bg</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
+<li><p><strong>fg</strong> (<em>Optional</em><em>[</em><em>Callable</em><em>]</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
@@ -5531,7 +6076,7 @@ Hi ProtoTools!
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.show_matrix">
-<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">show_matrix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">borderless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.show_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">show_matrix</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">borderless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sep</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.show_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prints a matrix.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -5541,10 +6086,11 @@ Hi ProtoTools!
 <li><p><strong>style</strong> (<em>str</em><em>, </em><em>optional</em>) – Style of the matrix. Defaults to None.</p></li>
 <li><p><strong>borderless</strong> (<em>bool</em><em>, </em><em>optional</em>) – Show the matrix without borders.
 Defaults to False.</p></li>
-<li><p><strong>show_index</strong> (<em>bool</em><em>, </em><em>optional</em>) – Show the index of the matrix.
+<li><p><strong>index</strong> (<em>bool</em><em>, </em><em>optional</em>) – Show the index of the matrix.
 Defaults to False.</p></li>
 <li><p><strong>sep</strong> (<em>int</em><em>, </em><em>optional</em>) – Separation between the columns. Defaults
 to 1.</p></li>
+<li><p><strong>color</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Color of the matrix. Defaults to None.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
@@ -5710,12 +6256,12 @@ is stripped.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.tabulate">
-<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">tabulate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'left'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.tabulate" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">tabulate</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">headless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inner</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.tabulate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Display data in a table.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>data</strong> (<em>sequence</em>) – Data to be shown.</p></li>
+<li><p><strong>data</strong> (<em>Sequence</em>) – Data to be shown.</p></li>
 <li><p><strong>headers</strong> (<em>List</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Optional header of the table.</p></li>
 <li><p><strong>headless</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, the data has no header. If
 False, the first row of the data becomes the header.
@@ -5726,7 +6272,7 @@ Defaults False.</p></li>
 the padding left, padding right, margin left and margin
 right.</p></li>
 <li><p><strong>border_type</strong> (<em>str</em><em>, </em><em>optional</em>) – Type of the border.</p></li>
-<li><p><strong>align</strong> (<em>str</em><em>, </em><em>optional</em>) – Alignment (left, center, right).</p></li>
+<li><p><strong>align</strong> (<em>str</em><em>, </em><em>optional</em>) – Alignment can be left, center or right.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -5736,6 +6282,7 @@ right.</p></li>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<p>TODO: add example</p>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.tail">
@@ -5786,7 +6333,7 @@ right.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.textbox">
-<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">textbox</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bcolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">light</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.textbox" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">textbox</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'center'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bcolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ml</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">light</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.textbox" title="Permalink to this definition">¶</a></dt>
 <dd><p>Draw a box with a text in it.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -5810,7 +6357,7 @@ right.</p></li>
 <p class="rubric">Example</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxln</span><span class="p">(</span><span class="n">green</span><span class="p">(</span><span class="s2">"ProtoTools"</span><span class="p">),</span> <span class="n">width</span><span class="o">=</span><span class="mi">30</span><span class="p">,</span> <span class="n">bcolor</span><span class="o">=</span><span class="s2">"red"</span><span class="p">)</span>
 <span class="go">┌────────────────────────────┐</span>
-<span class="go">│                 ProtoTools │</span>
+<span class="go">│         ProtoTools         │</span>
 <span class="go">└────────────────────────────┘</span>
 </pre></div>
 </div>
