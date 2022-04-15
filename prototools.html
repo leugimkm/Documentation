@@ -137,6 +137,416 @@
 <div class="section" id="submodules">
 <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
 </div>
+<div class="section" id="module-prototools.canvas">
+<span id="prototools-canvas-module"></span><h2>prototools.canvas module<a class="headerlink" href="#module-prototools.canvas" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="prototools.canvas.Canvas">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">Canvas</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Canvas Implementation for draw in terminal</p>
+<dl class="simple">
+<dt>Atributes:</dt><dd><p>w (int): Width of the canvas.
+h (int): Height of the canvas.
+bg (str): Background of the canvas.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.card">
+<code class="sig-name descname"><span class="pre">card</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.card" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – </p></li>
+<li><p><strong>y</strong> (<em>int</em>) – </p></li>
+<li><p><strong>w</strong> (<em>int</em>) – </p></li>
+<li><p><strong>h</strong> (<em>int</em>) – </p></li>
+<li><p><strong>rounded</strong> (<em>bool</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.clear_canvas">
+<code class="sig-name descname"><span class="pre">clear_canvas</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.clear_canvas" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.draw_figure">
+<code class="sig-name descname"><span class="pre">draw_figure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">char</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.draw_figure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a figure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>figure</strong> (<em>object</em>) – A figure.</p></li>
+<li><p><strong>char</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.listcard">
+<code class="sig-name descname"><span class="pre">listcard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.listcard" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – </p></li>
+<li><p><strong>y</strong> (<em>int</em>) – </p></li>
+<li><p><strong>list_</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>rounded</strong> (<em>bool</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.set_defaults">
+<code class="sig-name descname"><span class="pre">set_defaults</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.set_defaults" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>rounded</strong> (<em>bool</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.set_dimensions">
+<code class="sig-name descname"><span class="pre">set_dimensions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">space</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.set_dimensions" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>int</em>) – </p></li>
+<li><p><strong>height</strong> (<em>int</em>) – </p></li>
+<li><p><strong>space</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.show">
+<code class="sig-name descname"><span class="pre">show</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.show" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.textcard">
+<code class="sig-name descname"><span class="pre">textcard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.textcard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a card with text inside.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – x coordinate of the card.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – y coordinate of the card.</p></li>
+<li><p><strong>text</strong> (<em>str</em>) – Text to be written inside the card.</p></li>
+<li><p><strong>rounded</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, draws a rounded card.
+Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">textcard</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"Prototools"</span><span class="p">,</span> <span class="n">rounded</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="go">╭─────────────╮</span>
+<span class="go">│ Prototools  │</span>
+<span class="go">╰─────────────╯</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.umlcard">
+<code class="sig-name descname"><span class="pre">umlcard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">methods</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.umlcard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a UML card.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – The x coordinate of the top left corner of the card.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – The y coordinate of the top left corner of the card.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – The name of the class.</p></li>
+<li><p><strong>attributes</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of attributes.</p></li>
+<li><p><strong>methods</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of methods.</p></li>
+<li><p><strong>rounded</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – Whether to draw a rounded card.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">umlcard</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"Person"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"walk"</span><span class="p">,</span> <span class="s2">"run"</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="go">┌─────────┐</span>
+<span class="go">│ Person  │</span>
+<span class="go">├─────────┤</span>
+<span class="go">│ name    │</span>
+<span class="go">├─────────┤</span>
+<span class="go">│ walk    │</span>
+<span class="go">│ run     │</span>
+<span class="go">└─────────┘</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Canvas.write_at">
+<code class="sig-name descname"><span class="pre">write_at</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Canvas.write_at" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – </p></li>
+<li><p><strong>y</strong> (<em>int</em>) – </p></li>
+<li><p><strong>text</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.canvas.Circle">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">Circle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Circle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.canvas.FigureDataclass</span></code></a></p>
+<dl class="py method">
+<dt id="prototools.canvas.Circle.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Circle.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.canvas.Circle.r">
+<code class="sig-name descname"><span class="pre">r</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.canvas.Circle.r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.canvas.Figure">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">Figure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Figure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="prototools.canvas.Figure.change_color">
+<code class="sig-name descname"><span class="pre">change_color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Figure.change_color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>Callable</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Figure.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Figure.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.Figure.move">
+<code class="sig-name descname"><span class="pre">move</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Figure.move" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dx</strong> (<em>int</em>) – </p></li>
+<li><p><strong>dy</strong> (<em>int</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.canvas.FigureDataclass">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">FigureDataclass</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.FigureDataclass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="prototools.canvas.FigureDataclass.change_color">
+<code class="sig-name descname"><span class="pre">change_color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.FigureDataclass.change_color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>Callable</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.canvas.FigureDataclass.color">
+<code class="sig-name descname"><span class="pre">color</span></code><em class="property"><span class="pre">:</span> <span class="pre">Callable</span></em><a class="headerlink" href="#prototools.canvas.FigureDataclass.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.FigureDataclass.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.FigureDataclass.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.FigureDataclass.move">
+<code class="sig-name descname"><span class="pre">move</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.FigureDataclass.move" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dx</strong> (<em>int</em>) – </p></li>
+<li><p><strong>dy</strong> (<em>int</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.canvas.FigureDataclass.x">
+<code class="sig-name descname"><span class="pre">x</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.canvas.FigureDataclass.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.canvas.FigureDataclass.y">
+<code class="sig-name descname"><span class="pre">y</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.canvas.FigureDataclass.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.canvas.Rectangle">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">Rectangle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Rectangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.canvas.FigureDataclass</span></code></a></p>
+<dl class="py method">
+<dt id="prototools.canvas.Rectangle.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Rectangle.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.canvas.Rectangle.height">
+<code class="sig-name descname"><span class="pre">height</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.canvas.Rectangle.height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.canvas.Rectangle.width">
+<code class="sig-name descname"><span class="pre">width</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.canvas.Rectangle.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.canvas.ScreenCanvas">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">ScreenCanvas</span></code><a class="headerlink" href="#prototools.canvas.ScreenCanvas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="prototools.canvas.ScreenCanvas.add_figures">
+<code class="sig-name descname"><span class="pre">add_figures</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.ScreenCanvas.add_figures" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>figures</strong> (<em>List</em><em>[</em><a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><em>prototools.canvas.FigureDataclass</em></a><em>]</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.ScreenCanvas.clear_canvas">
+<code class="sig-name descname"><span class="pre">clear_canvas</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.ScreenCanvas.clear_canvas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.ScreenCanvas.clear_screen">
+<code class="sig-name descname"><span class="pre">clear_screen</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.ScreenCanvas.clear_screen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.ScreenCanvas.keyboard_press">
+<code class="sig-name descname"><span class="pre">keyboard_press</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.ScreenCanvas.keyboard_press" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>figure</strong> (<a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><em>prototools.canvas.FigureDataclass</em></a>) – </p></li>
+<li><p><strong>event</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.ScreenCanvas.move">
+<code class="sig-name descname"><span class="pre">move</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.ScreenCanvas.move" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.canvas.ScreenCanvas.refresh">
+<code class="sig-name descname"><span class="pre">refresh</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.ScreenCanvas.refresh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.canvas.Triangle">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">Triangle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.canvas.FigureDataclass</span></code></a></p>
+<dl class="py method">
+<dt id="prototools.canvas.Triangle.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.Triangle.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.canvas.Triangle.side">
+<code class="sig-name descname"><span class="pre">side</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.canvas.Triangle.side" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.canvas.get_max">
+<code class="sig-prename descclassname"><span class="pre">prototools.canvas.</span></code><code class="sig-name descname"><span class="pre">get_max</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sequence</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fallback</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.canvas.get_max" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sequence</strong> (<em>List</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+<li><p><strong>fallback</strong> (<em>Any</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+</div>
 <div class="section" id="module-prototools.colorize">
 <span id="prototools-colorize-module"></span><h2>prototools.colorize module<a class="headerlink" href="#module-prototools.colorize" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
@@ -1387,6 +1797,43 @@ End!
 </div>
 </dd></dl>
 </div>
+<div class="section" id="module-prototools.exp">
+<span id="prototools-exp-module"></span><h2>prototools.exp module<a class="headerlink" href="#module-prototools.exp" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="prototools.exp.retrieve_argname">
+<code class="sig-prename descclassname"><span class="pre">prototools.exp.</span></code><code class="sig-name descname"><span class="pre">retrieve_argname</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.exp.retrieve_argname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the name of the argument passed to the function.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>var</strong> (<em>object</em>) – The argument passed to the function.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The name of the argument.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">foo</span><span class="p">(</span><span class="n">a</span><span class="p">):</span>
+<span class="go">        n = retrieve_argname(a)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2">'s value is </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s2">"</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">foo</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="go">'x's value is 42</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.exp.retrive_varname">
+<code class="sig-prename descclassname"><span class="pre">prototools.exp.</span></code><code class="sig-name descname"><span class="pre">retrive_varname</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.exp.retrive_varname" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
+<dt id="prototools.exp.return_names">
+<code class="sig-prename descclassname"><span class="pre">prototools.exp.</span></code><code class="sig-name descname"><span class="pre">return_names</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.exp.return_names" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</div>
 <div class="section" id="module-prototools.inputs">
 <span id="prototools-inputs-module"></span><h2>prototools.inputs module<a class="headerlink" href="#module-prototools.inputs" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
@@ -1598,6 +2045,50 @@ the user’s input and returns the new value as the input.</p></li>
 <code class="sig-prename descclassname"><span class="pre">prototools.inputs.</span></code><code class="sig-name descname"><span class="pre">day_input</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.inputs.day_input" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 <dl class="py function">
+<dt id="prototools.inputs.email_input">
+<code class="sig-prename descclassname"><span class="pre">prototools.inputs.</span></code><code class="sig-name descname"><span class="pre">email_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.inputs.email_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prompt the user to enter an email.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prompt</strong> (<em>str</em><em>, </em><em>optional</em>) – Prompts the user to enter input.</p></li>
+<li><p><strong>default</strong> (<em>Any</em><em>, </em><em>optional</em>) – Default value to use.</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) – Time in seconds to enter an input.</p></li>
+<li><p><strong>limit</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of tries to enter a valid input.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Sequence</em><em>, </em><em>optional</em>) – Regex to allow.</p></li>
+<li><p><strong>block_regex</strong> (<em>Sequence</em><em>, </em><em>optional</em>) – Regex to block.</p></li>
+<li><p><strong>function</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Optional function that is passed
+the user’s input and returns the new value as the input.</p></li>
+<li><p><strong>validation</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Validator.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The email.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">email</span> <span class="o">=</span> <span class="n">email_input</span><span class="p">()</span>
+<span class="go">john@doe.com</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">email</span>
+<span class="go">john@doe.com</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">email</span> <span class="o">=</span> <span class="n">email_input</span><span class="p">()</span>
+<span class="go">ayudaenpython</span>
+<span class="go">ayudaenpython is not a valid email</span>
+<span class="go">ayudaen@python.com</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">email</span>
+<span class="go">ayudaen@python</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.inputs.float_input">
 <code class="sig-prename descclassname"><span class="pre">prototools.inputs.</span></code><code class="sig-name descname"><span class="pre">float_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.inputs.float_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prompt the user to enter a floating point number.</p>
@@ -1754,9 +2245,14 @@ the user’s input and returns the new value as the input.</p></li>
 <dd></dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.password_input">
-<code class="sig-prename descclassname"><span class="pre">prototools.inputs.</span></code><code class="sig-name descname"><span class="pre">password_input</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.inputs.password_input" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.inputs.</span></code><code class="sig-name descname"><span class="pre">password_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.inputs.password_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prompts the user to enter a password. Mask characters will be
 displayed instead of the actual characters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>prompt</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inputs.str_input">
@@ -2039,6 +2535,9 @@ by default, for no pause in between presses.</p></li>
 </dd>
 </dl>
 </dd></dl>
+</div>
+<div class="section" id="module-prototools.letters">
+<span id="prototools-letters-module"></span><h2>prototools.letters module<a class="headerlink" href="#module-prototools.letters" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="module-prototools.menu">
 <span id="prototools-menu-module"></span><h2>prototools.menu module<a class="headerlink" href="#module-prototools.menu" title="Permalink to this headline">¶</a></h2>
@@ -3356,6 +3855,294 @@ for this class.</p>
 </dd></dl>
 </dd></dl>
 </div>
+<div class="section" id="module-prototools.protosql">
+<span id="prototools-protosql-module"></span><h2>prototools.protosql module<a class="headerlink" href="#module-prototools.protosql" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="prototools.protosql.Incrementor">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.protosql.</span></code><code class="sig-name descname"><span class="pre">Incrementor</span></code><a class="headerlink" href="#prototools.protosql.Incrementor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="prototools.protosql.Incrementor.count">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">count</span></code><a class="headerlink" href="#prototools.protosql.Incrementor.count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.protosql.ProtoSqlite">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.protosql.</span></code><code class="sig-name descname"><span class="pre">ProtoSqlite</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Simple SqLite wrapper</p>
+<dl class="py attribute">
+<dt id="prototools.protosql.ProtoSqlite.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#prototools.protosql.ProtoSqlite.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.protosql.ProtoSqlite.lang">
+<code class="sig-name descname"><span class="pre">lang</span></code><a class="headerlink" href="#prototools.protosql.ProtoSqlite.lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>The language to translate to.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.protosql.ProtoSqlite.check">
+<code class="sig-name descname"><span class="pre">check</span></code><a class="headerlink" href="#prototools.protosql.ProtoSqlite.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether to check if the thread is the same as the
+one that created the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.add">
+<code class="sig-name descname"><span class="pre">add</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.add" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>data</strong> (<em>dict</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.close">
+<code class="sig-name descname"><span class="pre">close</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.close" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.protosql.ProtoSqlite.conn">
+<code class="sig-name descname"><span class="pre">conn</span></code><a class="headerlink" href="#prototools.protosql.ProtoSqlite.conn" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.create_table">
+<code class="sig-name descname"><span class="pre">create_table</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pk</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.create_table" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>pk</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.protosql.ProtoSqlite.cursor">
+<code class="sig-name descname"><span class="pre">cursor</span></code><a class="headerlink" href="#prototools.protosql.ProtoSqlite.cursor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.delete">
+<code class="sig-name descname"><span class="pre">delete</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pk</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.delete" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>col</strong> (<em>str</em>) – </p></li>
+<li><p><strong>pk</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.get">
+<code class="sig-name descname"><span class="pre">get</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.get" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>columns</strong> (<em>str</em>) – </p></li>
+<li><p><strong>limit</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.get_all">
+<code class="sig-name descname"><span class="pre">get_all</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.get_all" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>table</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>List[Tuple[Any, ..]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.get_last">
+<code class="sig-name descname"><span class="pre">get_last</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.get_last" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>index</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
+<li><p><strong>value</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.get_pk">
+<code class="sig-name descname"><span class="pre">get_pk</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.get_pk" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>table</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="id8">
+<code class="sig-name descname"><span class="pre">lang</span></code><a class="headerlink" href="#id8" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="id9">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#id9" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.open">
+<code class="sig-name descname"><span class="pre">open</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.open" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.query">
+<code class="sig-name descname"><span class="pre">query</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sql</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.query" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sql</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.summary">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">summary</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.summary" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>rows</strong> (<em>Any</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Any</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.to_csv">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">to_csv</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output.csv'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.to_csv" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.to_json">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">to_json</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output.json'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.to_json" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.to_txt">
+<em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">to_txt</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output.txt'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.to_txt" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.update">
+<code class="sig-name descname"><span class="pre">update</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.update" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>columns</strong> (<em>str</em>) – </p></li>
+<li><p><strong>condition</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.protosql.ProtoSqlite.update_">
+<code class="sig-name descname"><span class="pre">update_</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.ProtoSqlite.update_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>columns</strong> (<em>str</em>) – </p></li>
+<li><p><strong>condition</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.protosql.cols">
+<code class="sig-prename descclassname"><span class="pre">prototools.protosql.</span></code><code class="sig-name descname"><span class="pre">cols</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">class_</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.cols" title="Permalink to this definition">¶</a></dt>
+<dd><p>Helper function to get the columns of a class.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>class_</strong> (<em>object</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.protosql.get_data">
+<code class="sig-prename descclassname"><span class="pre">prototools.protosql.</span></code><code class="sig-name descname"><span class="pre">get_data</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.protosql.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the attributes and values of an object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>obj</strong> (<em>object</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+</div>
 <div class="section" id="module-prototools.tabulate">
 <span id="prototools-tabulate-module"></span><h2>prototools.tabulate module<a class="headerlink" href="#module-prototools.tabulate" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
@@ -3622,6 +4409,33 @@ pass to function.</p></li>
 </div>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.utils.matrix_panel">
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">matrix_panel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.matrix_panel" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">matrix_panel</span><span class="p">(</span><span class="s2">"ABC"</span><span class="p">)</span>
+<span class="go">░░██████░░░░████████░░░░░░████████░░</span>
+<span class="go">██░░░░░░██░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░████████░░░░██░░░░░░░░░░</span>
+<span class="go">██████████░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░████████░░░░░░████████░░</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – </p></li>
+<li><p><strong>fg</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>bg</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.utils.pairs">
 <code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">pairs</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.pairs" title="Permalink to this definition">¶</a></dt>
 <dd><p>s -&gt; (s0, s1), (s1, s2), (s2, s3), …</p>
@@ -3652,6 +4466,9 @@ this goes up to 0x10ffff, but after the default value it
 seems to return only question marks, increase it if would
 like to see more.</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -3709,7 +4526,7 @@ like to see more.</p></li>
 <dd></dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.secret_message">
-<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">secret_message</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'prototools</span> <span class="pre">0.1.20'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.secret_message" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">secret_message</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'prototools</span> <span class="pre">0.1.22'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.secret_message" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generates code that has a secret message when executed. To used
 it, copy the generated code and execute it in another file.</p>
 <dl class="field-list simple">
@@ -3723,6 +4540,21 @@ it, copy the generated code and execute it in another file.</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">secret_message</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="go">import random</span>
+</pre></div>
+</div>
+<p>random.seed(69420)
+print(‘’.join(chr(random.randrange(256) ^ c)</p>
+<blockquote>
+<div><dl class="simple">
+<dt>for c in bytes.fromhex(</dt><dd><p>‘EA8760D97CD68CB754E490D68D376C1997BBF9BD363BCE05CD85’
+)</p>
+</dd>
+</dl>
+<p>if random.randrange(2)))</p>
+</div></blockquote>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.utils.show_cursor">
@@ -3935,6 +4767,26 @@ is stripped.</p></li>
 </pre></div>
 </div>
 </dd></dl>
+<dl class="py function">
+<dt id="prototools.utils.write_letters">
+<code class="sig-prename descclassname"><span class="pre">prototools.utils.</span></code><code class="sig-name descname"><span class="pre">write_letters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.write_letters" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">write_letters</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="go"> _____            _         _              _</span>
+<span class="go">|  _  | ___  ___ | |_  ___ | |_  ___  ___ | | ___</span>
+<span class="go">|   __||  _|| . ||  _|| . ||  _|| . || . || ||_ -|</span>
+<span class="go">|__|   |_|  |___||_|  |___||_|  |___||___||_||___|</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
 </div>
 <div class="section" id="module-prototools.validators">
 <span id="prototools-validators-module"></span><h2>prototools.validators module<a class="headerlink" href="#module-prototools.validators" title="Permalink to this headline">¶</a></h2>
@@ -4096,8 +4948,37 @@ ValidatorsException.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.validators.validate_email">
-<code class="sig-prename descclassname"><span class="pre">prototools.validators.</span></code><code class="sig-name descname"><span class="pre">validate_email</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validators.validate_email" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<code class="sig-prename descclassname"><span class="pre">prototools.validators.</span></code><code class="sig-name descname"><span class="pre">validate_email</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validators.validate_email" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate an email address.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>str</em><em>, </em><em>optional</em>) – The value being validated.</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match one of the regexes.</p></li>
+<li><p><strong>block_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match none of the regexes.</p></li>
+<li><p><strong>exc_msg</strong> (<em>str</em><em>, </em><em>optional</em>) – Custom message to use in the raised
+ValidatorsException.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If value is not a valid email address.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The value argument, not value.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
 <dl class="py function">
 <dt id="prototools.validators.validate_float">
 <code class="sig-prename descclassname"><span class="pre">prototools.validators.</span></code><code class="sig-name descname"><span class="pre">validate_float</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validators.validate_float" title="Permalink to this definition">¶</a></dt>
@@ -4212,6 +5093,41 @@ None.</p></li>
 <code class="sig-prename descclassname"><span class="pre">prototools.validators.</span></code><code class="sig-name descname"><span class="pre">validate_phone</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validators.validate_phone" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 <dl class="py function">
+<dt id="prototools.validators.validate_regex">
+<code class="sig-prename descclassname"><span class="pre">prototools.validators.</span></code><code class="sig-name descname"><span class="pre">validate_regex</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validators.validate_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a string using a regular expression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>str</em><em>, </em><em>optional</em>) – The value being validated.</p></li>
+<li><p><strong>regex</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>Pattern</em><em>]</em>) – The regex to use.</p></li>
+<li><p><strong>flags</strong> (<em>int</em><em>, </em><em>optional</em>) – The flags to use in re.compile().</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match one of the regexes.</p></li>
+<li><p><strong>block_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match none of the regexes.</p></li>
+<li><p><strong>exc_msg</strong> (<em>str</em><em>, </em><em>optional</em>) – Custom message to use in the raised
+ValidatorsException.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If value is not a valid string.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The value argument, not value.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.validators.validate_str">
 <code class="sig-prename descclassname"><span class="pre">prototools.validators.</span></code><code class="sig-name descname"><span class="pre">validate_str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validators.validate_str" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validate a str.</p>
@@ -4261,6 +5177,39 @@ ValidatorsException.</p></li>
 </dd>
 <dt class="field-even">Raises</dt>
 <dd class="field-even"><p><strong>Exception</strong> – If value is not a valid time.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The value argument, not value.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.validators.validate_url">
+<code class="sig-prename descclassname"><span class="pre">prototools.validators.</span></code><code class="sig-name descname"><span class="pre">validate_url</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validators.validate_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>str</em><em>, </em><em>optional</em>) – The value being validated.</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match one of the regexes.</p></li>
+<li><p><strong>block_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match none of the regexes.</p></li>
+<li><p><strong>exc_msg</strong> (<em>str</em><em>, </em><em>optional</em>) – Custom message to use in the raised
+ValidatorsException.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If value is not a valid URL.</p>
 </dd>
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The value argument, not value.</p>
@@ -4355,6 +5304,223 @@ ValidatorsException.</p></li>
 </dd></dl>
 </dd></dl>
 <dl class="py class">
+<dt id="prototools.Canvas">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Canvas</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">40</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Canvas Implementation for draw in terminal</p>
+<dl class="simple">
+<dt>Atributes:</dt><dd><p>w (int): Width of the canvas.
+h (int): Height of the canvas.
+bg (str): Background of the canvas.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="prototools.Canvas.card">
+<code class="sig-name descname"><span class="pre">card</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">w</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.card" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – </p></li>
+<li><p><strong>y</strong> (<em>int</em>) – </p></li>
+<li><p><strong>w</strong> (<em>int</em>) – </p></li>
+<li><p><strong>h</strong> (<em>int</em>) – </p></li>
+<li><p><strong>rounded</strong> (<em>bool</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.clear_canvas">
+<code class="sig-name descname"><span class="pre">clear_canvas</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.clear_canvas" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.draw_figure">
+<code class="sig-name descname"><span class="pre">draw_figure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">char</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'*'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.draw_figure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a figure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>figure</strong> (<em>object</em>) – A figure.</p></li>
+<li><p><strong>char</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.listcard">
+<code class="sig-name descname"><span class="pre">listcard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.listcard" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – </p></li>
+<li><p><strong>y</strong> (<em>int</em>) – </p></li>
+<li><p><strong>list_</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>rounded</strong> (<em>bool</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.set_defaults">
+<code class="sig-name descname"><span class="pre">set_defaults</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.set_defaults" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>rounded</strong> (<em>bool</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.set_dimensions">
+<code class="sig-name descname"><span class="pre">set_dimensions</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">space</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.set_dimensions" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>width</strong> (<em>int</em>) – </p></li>
+<li><p><strong>height</strong> (<em>int</em>) – </p></li>
+<li><p><strong>space</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.show">
+<code class="sig-name descname"><span class="pre">show</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.show" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.textcard">
+<code class="sig-name descname"><span class="pre">textcard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.textcard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a card with text inside.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – x coordinate of the card.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – y coordinate of the card.</p></li>
+<li><p><strong>text</strong> (<em>str</em>) – Text to be written inside the card.</p></li>
+<li><p><strong>rounded</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, draws a rounded card.
+Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">textcard</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">"Prototools"</span><span class="p">,</span> <span class="n">rounded</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="go">╭─────────────╮</span>
+<span class="go">│ Prototools  │</span>
+<span class="go">╰─────────────╯</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.umlcard">
+<code class="sig-name descname"><span class="pre">umlcard</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attributes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">methods</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rounded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.umlcard" title="Permalink to this definition">¶</a></dt>
+<dd><p>Draws a UML card.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – The x coordinate of the top left corner of the card.</p></li>
+<li><p><strong>y</strong> (<em>int</em>) – The y coordinate of the top left corner of the card.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – The name of the class.</p></li>
+<li><p><strong>attributes</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of attributes.</p></li>
+<li><p><strong>methods</strong> (<em>List</em><em>[</em><em>str</em><em>]</em>) – A list of methods.</p></li>
+<li><p><strong>rounded</strong> (<em>Optional</em><em>[</em><em>bool</em><em>]</em>) – Whether to draw a rounded card.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Canvas</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">umlcard</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"Person"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"name"</span><span class="p">],</span> <span class="p">[</span><span class="s2">"walk"</span><span class="p">,</span> <span class="s2">"run"</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="go">┌─────────┐</span>
+<span class="go">│ Person  │</span>
+<span class="go">├─────────┤</span>
+<span class="go">│ name    │</span>
+<span class="go">├─────────┤</span>
+<span class="go">│ walk    │</span>
+<span class="go">│ run     │</span>
+<span class="go">└─────────┘</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Canvas.write_at">
+<code class="sig-name descname"><span class="pre">write_at</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Canvas.write_at" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>int</em>) – </p></li>
+<li><p><strong>y</strong> (<em>int</em>) – </p></li>
+<li><p><strong>text</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.Circle">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Circle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Circle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.canvas.FigureDataclass</span></code></a></p>
+<dl class="py attribute">
+<dt id="prototools.Circle.color">
+<code class="sig-name descname"><span class="pre">color</span></code><em class="property"><span class="pre">:</span> <span class="pre">Callable</span></em><a class="headerlink" href="#prototools.Circle.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.Circle.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Circle.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Circle.r">
+<code class="sig-name descname"><span class="pre">r</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Circle.r" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Circle.x">
+<code class="sig-name descname"><span class="pre">x</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Circle.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Circle.y">
+<code class="sig-name descname"><span class="pre">y</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Circle.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+<dl class="py class">
 <dt id="prototools.Counter">
 <em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Counter</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Counter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -4437,6 +5603,100 @@ which to duplicate the height and width.</p></li>
 </dd>
 </dl>
 </dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.Figure">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Figure</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Figure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="prototools.Figure.change_color">
+<code class="sig-name descname"><span class="pre">change_color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Figure.change_color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>Callable</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Figure.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Figure.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.Figure.move">
+<code class="sig-name descname"><span class="pre">move</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Figure.move" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dx</strong> (<em>int</em>) – </p></li>
+<li><p><strong>dy</strong> (<em>int</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.FigureDataclass">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">FigureDataclass</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.FigureDataclass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="prototools.FigureDataclass.change_color">
+<code class="sig-name descname"><span class="pre">change_color</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.FigureDataclass.change_color" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>color</strong> (<em>Callable</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.FigureDataclass.color">
+<code class="sig-name descname"><span class="pre">color</span></code><em class="property"><span class="pre">:</span> <span class="pre">Callable</span></em><a class="headerlink" href="#prototools.FigureDataclass.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.FigureDataclass.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.FigureDataclass.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.FigureDataclass.move">
+<code class="sig-name descname"><span class="pre">move</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.FigureDataclass.move" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dx</strong> (<em>int</em>) – </p></li>
+<li><p><strong>dy</strong> (<em>int</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.FigureDataclass.x">
+<code class="sig-name descname"><span class="pre">x</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.FigureDataclass.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.FigureDataclass.y">
+<code class="sig-name descname"><span class="pre">y</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.FigureDataclass.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.FunctionItem">
@@ -5142,9 +6402,40 @@ out.</p>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.ProtoSqlite">
-<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">ProtoSqlite</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ProtoSqlite" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">ProtoSqlite</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ProtoSqlite" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Simple sqlite wrapper</p>
+<p>Simple SqLite wrapper</p>
+<dl class="py attribute">
+<dt id="prototools.ProtoSqlite.name">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#prototools.ProtoSqlite.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.ProtoSqlite.lang">
+<code class="sig-name descname"><span class="pre">lang</span></code><a class="headerlink" href="#prototools.ProtoSqlite.lang" title="Permalink to this definition">¶</a></dt>
+<dd><p>The language to translate to.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.ProtoSqlite.check">
+<code class="sig-name descname"><span class="pre">check</span></code><a class="headerlink" href="#prototools.ProtoSqlite.check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether to check if the thread is the same as the
+one that created the database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
 <dl class="py method">
 <dt id="prototools.ProtoSqlite.add">
 <code class="sig-name descname"><span class="pre">add</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ProtoSqlite.add" title="Permalink to this definition">¶</a></dt>
@@ -5223,7 +6514,7 @@ out.</p>
 <dd class="field-odd"><p><strong>table</strong> (<em>str</em>) – </p>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p>list</p>
+<dd class="field-even"><p>List[Tuple[Any, ..]]</p>
 </dd>
 </dl>
 </dd></dl>
@@ -5232,7 +6523,11 @@ out.</p>
 <code class="sig-name descname"><span class="pre">get_last</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ProtoSqlite.get_last" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>table</strong> (<em>str</em>) – </p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table</strong> (<em>str</em>) – </p></li>
+<li><p><strong>index</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
+<li><p><strong>value</strong> (<em>Optional</em><em>[</em><em>Any</em><em>]</em>) – </p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p>list</p>
@@ -5252,12 +6547,12 @@ out.</p>
 </dl>
 </dd></dl>
 <dl class="py attribute">
-<dt id="prototools.ProtoSqlite.lang">
-<code class="sig-name descname"><span class="pre">lang</span></code><a class="headerlink" href="#prototools.ProtoSqlite.lang" title="Permalink to this definition">¶</a></dt>
+<dt id="id10">
+<code class="sig-name descname"><span class="pre">lang</span></code><a class="headerlink" href="#id10" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 <dl class="py attribute">
-<dt id="prototools.ProtoSqlite.name">
-<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#prototools.ProtoSqlite.name" title="Permalink to this definition">¶</a></dt>
+<dt id="id11">
+<code class="sig-name descname"><span class="pre">name</span></code><a class="headerlink" href="#id11" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 <dl class="py method">
 <dt id="prototools.ProtoSqlite.open">
@@ -5286,7 +6581,15 @@ out.</p>
 <dl class="py method">
 <dt id="prototools.ProtoSqlite.summary">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">summary</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ProtoSqlite.summary" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>rows</strong> (<em>Any</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Any</p>
+</dd>
+</dl>
+</dd></dl>
 <dl class="py method">
 <dt id="prototools.ProtoSqlite.to_csv">
 <em class="property"><span class="pre">static</span> </em><code class="sig-name descname"><span class="pre">to_csv</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'output.csv'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ProtoSqlite.to_csv" title="Permalink to this definition">¶</a></dt>
@@ -5325,6 +6628,9 @@ out.</p>
 <li><p><strong>condition</strong> (<em>str</em>) – </p></li>
 </ul>
 </dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
 </dd></dl>
 <dl class="py method">
@@ -5338,6 +6644,9 @@ out.</p>
 <li><p><strong>condition</strong> (<em>str</em>) – </p></li>
 </ul>
 </dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
 </dd></dl>
 </dd></dl>
@@ -5346,6 +6655,40 @@ out.</p>
 <em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">RangeDict</span></code><a class="headerlink" href="#prototools.RangeDict" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
 <p>Custom range.</p>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.Rectangle">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Rectangle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Rectangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.canvas.FigureDataclass</span></code></a></p>
+<dl class="py attribute">
+<dt id="prototools.Rectangle.color">
+<code class="sig-name descname"><span class="pre">color</span></code><em class="property"><span class="pre">:</span> <span class="pre">Callable</span></em><a class="headerlink" href="#prototools.Rectangle.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.Rectangle.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Rectangle.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Rectangle.height">
+<code class="sig-name descname"><span class="pre">height</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Rectangle.height" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Rectangle.width">
+<code class="sig-name descname"><span class="pre">width</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Rectangle.width" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Rectangle.x">
+<code class="sig-name descname"><span class="pre">x</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Rectangle.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Rectangle.y">
+<code class="sig-name descname"><span class="pre">y</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Rectangle.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.Screen">
@@ -5445,6 +6788,59 @@ newline character.</p>
 </dd>
 </dl>
 </dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.ScreenCanvas">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">ScreenCanvas</span></code><a class="headerlink" href="#prototools.ScreenCanvas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="prototools.ScreenCanvas.add_figures">
+<code class="sig-name descname"><span class="pre">add_figures</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figures</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ScreenCanvas.add_figures" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>figures</strong> (<em>List</em><em>[</em><a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><em>prototools.canvas.FigureDataclass</em></a><em>]</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.ScreenCanvas.clear_canvas">
+<code class="sig-name descname"><span class="pre">clear_canvas</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ScreenCanvas.clear_canvas" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.ScreenCanvas.clear_screen">
+<code class="sig-name descname"><span class="pre">clear_screen</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ScreenCanvas.clear_screen" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.ScreenCanvas.keyboard_press">
+<code class="sig-name descname"><span class="pre">keyboard_press</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ScreenCanvas.keyboard_press" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>figure</strong> (<a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><em>prototools.canvas.FigureDataclass</em></a>) – </p></li>
+<li><p><strong>event</strong> (<em>str</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.ScreenCanvas.move">
+<code class="sig-name descname"><span class="pre">move</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">figure</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ScreenCanvas.move" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py method">
+<dt id="prototools.ScreenCanvas.refresh">
+<code class="sig-name descname"><span class="pre">refresh</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ScreenCanvas.refresh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 </dd></dl>
 <dl class="py class">
 <dt id="prototools.Style">
@@ -5552,6 +6948,36 @@ for this class.</p>
 </dd>
 </dl>
 </dd></dl>
+</dd></dl>
+<dl class="py class">
+<dt id="prototools.Triangle">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">Triangle</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">side</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Triangle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#prototools.canvas.FigureDataclass" title="prototools.canvas.FigureDataclass"><code class="xref py py-class docutils literal notranslate"><span class="pre">prototools.canvas.FigureDataclass</span></code></a></p>
+<dl class="py attribute">
+<dt id="prototools.Triangle.color">
+<code class="sig-name descname"><span class="pre">color</span></code><em class="property"><span class="pre">:</span> <span class="pre">Callable</span></em><a class="headerlink" href="#prototools.Triangle.color" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py method">
+<dt id="prototools.Triangle.get_pos">
+<code class="sig-name descname"><span class="pre">get_pos</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.Triangle.get_pos" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>List[Tuple[int, int]]</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Triangle.side">
+<code class="sig-name descname"><span class="pre">side</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Triangle.side" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Triangle.x">
+<code class="sig-name descname"><span class="pre">x</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Triangle.x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py attribute">
+<dt id="prototools.Triangle.y">
+<code class="sig-name descname"><span class="pre">y</span></code><em class="property"><span class="pre">:</span> <span class="pre">int</span></em><a class="headerlink" href="#prototools.Triangle.y" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.ask_to_finish">
@@ -5934,6 +7360,50 @@ the user’s input and returns the new value as the input.</p></li>
 </dl>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.email_input">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">email_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.email_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prompt the user to enter an email.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>prompt</strong> (<em>str</em><em>, </em><em>optional</em>) – Prompts the user to enter input.</p></li>
+<li><p><strong>default</strong> (<em>Any</em><em>, </em><em>optional</em>) – Default value to use.</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>timeout</strong> (<em>int</em><em>, </em><em>optional</em>) – Time in seconds to enter an input.</p></li>
+<li><p><strong>limit</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of tries to enter a valid input.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Sequence</em><em>, </em><em>optional</em>) – Regex to allow.</p></li>
+<li><p><strong>block_regex</strong> (<em>Sequence</em><em>, </em><em>optional</em>) – Regex to block.</p></li>
+<li><p><strong>function</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Optional function that is passed
+the user’s input and returns the new value as the input.</p></li>
+<li><p><strong>validation</strong> (<em>Callable</em><em>, </em><em>optional</em>) – Validator.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The email.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">email</span> <span class="o">=</span> <span class="n">email_input</span><span class="p">()</span>
+<span class="go">john@doe.com</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">email</span>
+<span class="go">john@doe.com</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">email</span> <span class="o">=</span> <span class="n">email_input</span><span class="p">()</span>
+<span class="go">ayudaenpython</span>
+<span class="go">ayudaenpython is not a valid email</span>
+<span class="go">ayudaen@python.com</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">email</span>
+<span class="go">ayudaen@python</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.flatten">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">flatten</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_lists</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.flatten" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return an iterator flattening one level of nesting in a
@@ -6003,6 +7473,11 @@ the user’s input and returns the new value as the input.</p></li>
 <span class="go">[('A', 'B', 'C'), ('D', 'E', 'F'), ('G', 'x', 'x')]</span>
 </pre></div>
 </div>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.hide_cursor">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">hide_cursor</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.hide_cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hide console cursor.</p>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.inject">
@@ -6140,6 +7615,33 @@ pass to function.</p></li>
 </div>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.matrix_panel">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">matrix_panel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.matrix_panel" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">matrix_panel</span><span class="p">(</span><span class="s2">"ABC"</span><span class="p">)</span>
+<span class="go">░░██████░░░░████████░░░░░░████████░░</span>
+<span class="go">██░░░░░░██░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░████████░░░░██░░░░░░░░░░</span>
+<span class="go">██████████░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░██░░░░░░██░░██░░░░░░░░░░</span>
+<span class="go">██░░░░░░██░░████████░░░░░░████████░░</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – </p></li>
+<li><p><strong>fg</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+<li><p><strong>bg</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.menu_input">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">menu_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">choices</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">numbers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">letters</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timeout</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.menu_input" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prompt the user to enter one of the provieded choices. Also
@@ -6232,6 +7734,17 @@ Function 'f' is obsolete!, use 'g()' instead
 entries</p>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.password_input">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">password_input</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.password_input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prompts the user to enter a password. Mask characters will be
+displayed instead of the actual characters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>prompt</strong> (<em>str</em>) – </p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.print_chars">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">print_chars</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_length</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">32</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_char</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">131072</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.print_chars" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print all chars in the terminal, to help you find that cool one
@@ -6246,6 +7759,9 @@ this goes up to 0x10ffff, but after the default value it
 seems to return only question marks, increase it if would
 like to see more.</p></li>
 </ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -6443,7 +7959,7 @@ Hi ProtoTools!
 <dd></dd></dl>
 <dl class="py function">
 <dt id="prototools.secret_message">
-<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">secret_message</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'prototools</span> <span class="pre">0.1.20'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.secret_message" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">secret_message</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'prototools</span> <span class="pre">0.1.22'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.secret_message" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generates code that has a secret message when executed. To used
 it, copy the generated code and execute it in another file.</p>
 <dl class="field-list simple">
@@ -6457,6 +7973,21 @@ it, copy the generated code and execute it in another file.</p>
 <dd class="field-odd"><p>str</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">secret_message</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="go">import random</span>
+</pre></div>
+</div>
+<p>random.seed(69420)
+print(‘’.join(chr(random.randrange(256) ^ c)</p>
+<blockquote>
+<div><dl class="simple">
+<dt>for c in bytes.fromhex(</dt><dd><p>‘EA8760D97CD68CB754E490D68D376C1997BBF9BD363BCE05CD85’
+)</p>
+</dd>
+</dl>
+<p>if random.randrange(2)))</p>
+</div></blockquote>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.show_cols">
@@ -6484,6 +8015,11 @@ it, copy the generated code and execute it in another file.</p>
 <span class="go">█ █ ░ █ █</span>
 </pre></div>
 </div>
+</dd></dl>
+<dl class="py function">
+<dt id="prototools.show_cursor">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">show_cursor</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#prototools.show_cursor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show console cursor.</p>
 </dd></dl>
 <dl class="py function">
 <dt id="prototools.show_matrix">
@@ -7016,6 +8552,39 @@ ValidatorsException.</p></li>
 </dl>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.validate_email">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">validate_email</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validate_email" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate an email address.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>str</em><em>, </em><em>optional</em>) – The value being validated.</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match one of the regexes.</p></li>
+<li><p><strong>block_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match none of the regexes.</p></li>
+<li><p><strong>exc_msg</strong> (<em>str</em><em>, </em><em>optional</em>) – Custom message to use in the raised
+ValidatorsException.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If value is not a valid email address.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The value argument, not value.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.validate_float">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">validate_float</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validate_float" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validate a float.</p>
@@ -7121,6 +8690,41 @@ None.</p></li>
 </dl>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.validate_regex">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">validate_regex</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">flags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validate_regex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a string using a regular expression.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>str</em><em>, </em><em>optional</em>) – The value being validated.</p></li>
+<li><p><strong>regex</strong> (<em>Union</em><em>[</em><em>str</em><em>, </em><em>Pattern</em><em>]</em>) – The regex to use.</p></li>
+<li><p><strong>flags</strong> (<em>int</em><em>, </em><em>optional</em>) – The flags to use in re.compile().</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match one of the regexes.</p></li>
+<li><p><strong>block_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match none of the regexes.</p></li>
+<li><p><strong>exc_msg</strong> (<em>str</em><em>, </em><em>optional</em>) – Custom message to use in the raised
+ValidatorsException.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If value is not a valid string.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The value argument, not value.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.validate_str">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">validate_str</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validate_str" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validate a str.</p>
@@ -7180,6 +8784,39 @@ ValidatorsException.</p></li>
 </dl>
 </dd></dl>
 <dl class="py function">
+<dt id="prototools.validate_url">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">validate_url</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">block_regex</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validate_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate a URL.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> (<em>str</em><em>, </em><em>optional</em>) – The value being validated.</p></li>
+<li><p><strong>blank</strong> (<em>bool</em><em>, </em><em>optional</em>) – If True, a blank string will be
+accepted. Defaults to False.</p></li>
+<li><p><strong>strip</strong> (<em>Union</em><em>[</em><em>None</em><em>, </em><em>str</em><em>, </em><em>bool</em><em>]</em><em>, </em><em>optional</em>) – If None, whitespace
+is strip from value. If str, the characters in it are
+stripped. If False, nothing is stripped.</p></li>
+<li><p><strong>allow_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match one of the regexes.</p></li>
+<li><p><strong>block_regex</strong> (<em>Optional</em><em>[</em><em>Sequence</em><em>]</em><em>, </em><em>optional</em>) – If not None,
+the value is only allowed to match none of the regexes.</p></li>
+<li><p><strong>exc_msg</strong> (<em>str</em><em>, </em><em>optional</em>) – Custom message to use in the raised
+ValidatorsException.</p></li>
+<li><p><strong>lang</strong> (<em>str</em>) – Establish the language.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>Exception</strong> – If value is not a valid URL.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>The value argument, not value.</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
 <dt id="prototools.validate_yes_no">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">validate_yes_no</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">blank</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strip</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yes_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'yes'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">no_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'no'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_msg</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.validate_yes_no" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validate a yes/no response.</p>
@@ -7218,6 +8855,26 @@ ValidatorsException.</p></li>
 <dt id="prototools.white">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">white</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.white" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+<dl class="py function">
+<dt id="prototools.write_letters">
+<code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">write_letters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.write_letters" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">write_letters</span><span class="p">(</span><span class="s2">"Hello World!"</span><span class="p">)</span>
+<span class="go"> _____            _         _              _</span>
+<span class="go">|  _  | ___  ___ | |_  ___ | |_  ___  ___ | | ___</span>
+<span class="go">|   __||  _|| . ||  _|| . ||  _|| . || . || ||_ -|</span>
+<span class="go">|__|   |_|  |___||_|  |___||_|  |___||___||_||___|</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> (<em>str</em>) – </p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
 <dl class="py function">
 <dt id="prototools.yellow">
 <code class="sig-prename descclassname"><span class="pre">prototools.</span></code><code class="sig-name descname"><span class="pre">yellow</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.yellow" title="Permalink to this definition">¶</a></dt>
@@ -7310,15 +8967,19 @@ the user’s input and returns the new value as the input.</p></li>
             <ul>
 <li><a class="reference internal" href="#">prototools package</a><ul>
 <li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-prototools.canvas">prototools.canvas module</a></li>
 <li><a class="reference internal" href="#module-prototools.colorize">prototools.colorize module</a></li>
 <li><a class="reference internal" href="#module-prototools.components">prototools.components module</a></li>
 <li><a class="reference internal" href="#module-prototools.config">prototools.config module</a></li>
 <li><a class="reference internal" href="#module-prototools.constants">prototools.constants module</a></li>
 <li><a class="reference internal" href="#module-prototools.decorators">prototools.decorators module</a></li>
+<li><a class="reference internal" href="#module-prototools.exp">prototools.exp module</a></li>
 <li><a class="reference internal" href="#module-prototools.inputs">prototools.inputs module</a></li>
 <li><a class="reference internal" href="#module-prototools.keyboard">prototools.keyboard module</a></li>
+<li><a class="reference internal" href="#module-prototools.letters">prototools.letters module</a></li>
 <li><a class="reference internal" href="#module-prototools.menu">prototools.menu module</a></li>
 <li><a class="reference internal" href="#module-prototools.protodb">prototools.protodb module</a></li>
+<li><a class="reference internal" href="#module-prototools.protosql">prototools.protosql module</a></li>
 <li><a class="reference internal" href="#module-prototools.tabulate">prototools.tabulate module</a></li>
 <li><a class="reference internal" href="#module-prototools.utils">prototools.utils module</a></li>
 <li><a class="reference internal" href="#module-prototools.validators">prototools.validators module</a></li>
