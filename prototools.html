@@ -2020,7 +2020,7 @@ End!
 </pre></div>
 </div>
 <p>Output:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Finished</span> <span class="s1">'f'</span> <span class="ow">in</span> <span class="mf">0.0289</span> <span class="n">secs</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Finished</span> <span class="s1">'f'</span> <span class="ow">in</span> <span class="mf">0.028945</span> <span class="n">secs</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -4617,7 +4617,7 @@ right.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.utils.ask_to_finish">
-<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">ask_to_finish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.ask_to_finish" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">ask_to_finish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'&gt;</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.ask_to_finish" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ask the user to finish a loop.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4626,6 +4626,7 @@ right.</p></li>
 loop.</p></li>
 <li><p><strong>yes</strong> (<em>str</em><em>, </em><em>optional</em>) – Value of affirmative response.</p></li>
 <li><p><strong>lang</strong> (<em>str</em><em>, </em><em>optional</em>) – Establish the language.</p></li>
+<li><p><strong>input_prompt</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -4679,6 +4680,18 @@ loop.</p></li>
 <dd class="field-odd"><p>Callable</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="go">9</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.utils.create_f">
@@ -4731,19 +4744,49 @@ list of lists.</p>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.utils.get_data">
-<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.get_data" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lines'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.get_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – Filename.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – The name of the file to read.</p></li>
+<li><p><strong>mode</strong> (<em>str</em><em>, </em><em>optional</em>) – The mode to read the file. Options are:
+- “lines” (default): Returns a list of lines.
+- “text”: Returns the entire content as a single string.
+- “json”: Returns the parsed JSON data.</p></li>
+<li><p><strong>encoding</strong> (<em>str</em><em>, </em><em>optional</em>) – The encoding used to read the file.
+Default is “utf-8”.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Data</p>
+<dd class="field-even"><p>The file content based on the selected mode.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>List[str]</p>
+<dd class="field-odd"><p>Union[List[str], str, Any]</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the specified mode is not supported.</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading lines from a text file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lines</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s2">"data.txt"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+<span class="go">['line 1', 'line 2', 'line 3']</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading the entire content as a single string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s2">"data.txt"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"text"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="go">'line 1\nline 2\nline 3'</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading and parsing a JSON file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s2">"data.json"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"json"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="go">{'key1': 'value1', 'key2': 'value2'}</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.utils.grouper">
@@ -4767,7 +4810,7 @@ list of lists.</p>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.utils.main_loop">
-<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">main_loop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.main_loop" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">main_loop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.main_loop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call a function until validation is False.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -4777,6 +4820,8 @@ list of lists.</p>
 <li><p><strong>kwargs</strong> (<em>Optional</em><em>[</em><em>Dict</em><em>[</em><em>Any</em><em>, </em><em>None</em><em>]</em><em>]</em>) – Keyword arguments to
 pass to function.</p></li>
 <li><p><strong>validation</strong> (<em>Callable</em>) – If False, ends the loop.</p></li>
+<li><p><strong>custom_function</strong> (<em>Callable</em>) – Function that determines if the
+loop should continue. If False, ends the loop.</p></li>
 <li><p><strong>lang</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 </ul>
 </dd>
@@ -5215,7 +5260,49 @@ is stripped.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.utils.time_functions">
-<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">time_functions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.time_functions" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">time_functions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.time_functions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time the execution of multiple functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>functions</strong> (<em>Union</em><em>[</em><em>List</em><em>[</em><em>Callable</em><em>]</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Callable</em><em>]</em><em>]</em>) – Functions to be timed. Can be a list of functions or a
+dictionary with function names as keys.</p></li>
+<li><p><strong>args</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>Any</em><em>, </em><em>...</em><em>]</em><em>]</em>) – Positional arguments to pass
+to the functions.</p></li>
+<li><p><strong>kwargs</strong> (<em>Optional</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – Keyword arguments to pass to
+the functions.</p></li>
+<li><p><strong>setup</strong> (<em>str</em><em>, </em><em>optional</em>) – Setup code for necessary imports.
+Defaults to an empty string.</p></li>
+<li><p><strong>globals</strong> (<em>dict</em><em>, </em><em>optional</em>) – Global namespace. Defaults to None.</p></li>
+<li><p><strong>number</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations for timing.
+Defaults to 1,000,000.</p></li>
+<li><p><strong>lang</strong> (<em>str</em><em>, </em><em>optional</em>) – Language for the output. Defaults to “en”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">r</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="n">r</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">r</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time_functions</span><span class="p">([</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">],</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,))</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Output:</dt><dd><p>‘f’ took 0.255712 secs
+‘g’ took 0.421514 secs</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="prototools.utils.time_functions_custom">
+<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">time_functions_custom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.time_functions_custom" title="Permalink to this definition">¶</a></dt>
 <dd><p>Time functions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -5245,7 +5332,7 @@ is stripped.</p></li>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">fs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"f"</span><span class="p">:</span> <span class="n">f</span><span class="p">,</span> <span class="s2">"g"</span><span class="p">:</span> <span class="n">g</span><span class="p">}</span>
-    <span class="n">time_functions</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>
+    <span class="n">time_functions_custom</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>
 </pre></div>
 </div>
 <p>Output:</p>
@@ -5253,6 +5340,48 @@ is stripped.</p></li>
 <span class="s1">'g'</span> <span class="n">took</span> <span class="mf">6.7192</span> <span class="n">secs</span>
 </pre></div>
 </div>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="prototools.utils.time_functions_globals">
+<span class="sig-prename descclassname"><span class="pre">prototools.utils.</span></span><span class="sig-name descname"><span class="pre">time_functions_globals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.utils.time_functions_globals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time the execution of multiple functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>functions</strong> (<em>Union</em><em>[</em><em>List</em><em>[</em><em>Callable</em><em>]</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Callable</em><em>]</em><em>]</em>) – Functions to be timed. Can be a list of functions or a
+dictionary with function names as keys.</p></li>
+<li><p><strong>args</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>Any</em><em>, </em><em>...</em><em>]</em><em>]</em>) – Positional arguments to pass
+to the functions.</p></li>
+<li><p><strong>kwargs</strong> (<em>Optional</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – Keyword arguments to pass to
+the functions.</p></li>
+<li><p><strong>setup</strong> (<em>str</em><em>, </em><em>optional</em>) – Setup code for necessary imports.
+Defaults to an empty string.</p></li>
+<li><p><strong>globals</strong> (<em>dict</em><em>, </em><em>optional</em>) – Global namespace. Defaults to None.</p></li>
+<li><p><strong>number</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations for timing.
+Defaults to 1,000,000.</p></li>
+<li><p><strong>lang</strong> (<em>str</em><em>, </em><em>optional</em>) – Language for the output. Defaults to “en”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">r</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="n">r</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">r</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time_functions_globals</span><span class="p">([</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">],</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,),</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Output:</dt><dd><p>‘f’ took 0.255712 secs
+‘g’ took 0.421514 secs</p>
+</dd>
+</dl>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.utils.write_letters">
@@ -7776,7 +7905,7 @@ for this class.</p>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.ask_to_finish">
-<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">ask_to_finish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ask_to_finish" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">ask_to_finish</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'_default'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_prompt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'&gt;</span> <span class="pre">'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.ask_to_finish" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ask the user to finish a loop.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -7785,6 +7914,7 @@ for this class.</p>
 loop.</p></li>
 <li><p><strong>yes</strong> (<em>str</em><em>, </em><em>optional</em>) – Value of affirmative response.</p></li>
 <li><p><strong>lang</strong> (<em>str</em><em>, </em><em>optional</em>) – Establish the language.</p></li>
+<li><p><strong>input_prompt</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -7986,6 +8116,18 @@ the user’s input and returns the new value as the input.</p></li>
 <dd class="field-odd"><p>Callable</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span> <span class="o">=</span> <span class="n">compose</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">7</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">h</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="go">9</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.create_colors">
@@ -8274,19 +8416,49 @@ the user’s input and returns the new value as the input.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.get_data">
-<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.get_data" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'lines'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.get_data" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get data.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>filename</strong> (<em>str</em>) – Filename.</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>str</em>) – The name of the file to read.</p></li>
+<li><p><strong>mode</strong> (<em>str</em><em>, </em><em>optional</em>) – The mode to read the file. Options are:
+- “lines” (default): Returns a list of lines.
+- “text”: Returns the entire content as a single string.
+- “json”: Returns the parsed JSON data.</p></li>
+<li><p><strong>encoding</strong> (<em>str</em><em>, </em><em>optional</em>) – The encoding used to read the file.
+Default is “utf-8”.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>Data</p>
+<dd class="field-even"><p>The file content based on the selected mode.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>List[str]</p>
+<dd class="field-odd"><p>Union[List[str], str, Any]</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the specified mode is not supported.</p>
 </dd>
 </dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading lines from a text file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lines</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s2">"data.txt"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+<span class="go">['line 1', 'line 2', 'line 3']</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading the entire content as a single string</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s2">"data.txt"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"text"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="go">'line 1\nline 2\nline 3'</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Reading and parsing a JSON file</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">get_data</span><span class="p">(</span><span class="s2">"data.json"</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">"json"</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="go">{'key1': 'value1', 'key2': 'value2'}</span>
+</pre></div>
+</div>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.green">
@@ -8431,7 +8603,7 @@ the user’s input and returns the new value as the input.</p></li>
 <dd></dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.main_loop">
-<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">main_loop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.main_loop" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">main_loop</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">function</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_function</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.main_loop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call a function until validation is False.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -8441,6 +8613,8 @@ the user’s input and returns the new value as the input.</p></li>
 <li><p><strong>kwargs</strong> (<em>Optional</em><em>[</em><em>Dict</em><em>[</em><em>Any</em><em>, </em><em>None</em><em>]</em><em>]</em>) – Keyword arguments to
 pass to function.</p></li>
 <li><p><strong>validation</strong> (<em>Callable</em>) – If False, ends the loop.</p></li>
+<li><p><strong>custom_function</strong> (<em>Callable</em>) – Function that determines if the
+loop should continue. If False, ends the loop.</p></li>
 <li><p><strong>lang</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em>) – </p></li>
 </ul>
 </dd>
@@ -9259,7 +9433,49 @@ right.</p></li>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.time_functions">
-<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">time_functions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.time_functions" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">time_functions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.time_functions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time the execution of multiple functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>functions</strong> (<em>Union</em><em>[</em><em>List</em><em>[</em><em>Callable</em><em>]</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Callable</em><em>]</em><em>]</em>) – Functions to be timed. Can be a list of functions or a
+dictionary with function names as keys.</p></li>
+<li><p><strong>args</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>Any</em><em>, </em><em>...</em><em>]</em><em>]</em>) – Positional arguments to pass
+to the functions.</p></li>
+<li><p><strong>kwargs</strong> (<em>Optional</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – Keyword arguments to pass to
+the functions.</p></li>
+<li><p><strong>setup</strong> (<em>str</em><em>, </em><em>optional</em>) – Setup code for necessary imports.
+Defaults to an empty string.</p></li>
+<li><p><strong>globals</strong> (<em>dict</em><em>, </em><em>optional</em>) – Global namespace. Defaults to None.</p></li>
+<li><p><strong>number</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations for timing.
+Defaults to 1,000,000.</p></li>
+<li><p><strong>lang</strong> (<em>str</em><em>, </em><em>optional</em>) – Language for the output. Defaults to “en”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">r</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="n">r</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">r</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time_functions</span><span class="p">([</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">],</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,))</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Output:</dt><dd><p>‘f’ took 0.255712 secs
+‘g’ took 0.421514 secs</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="prototools.time_functions_custom">
+<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">time_functions_custom</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.time_functions_custom" title="Permalink to this definition">¶</a></dt>
 <dd><p>Time functions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -9289,7 +9505,7 @@ right.</p></li>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
     <span class="n">fs</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"f"</span><span class="p">:</span> <span class="n">f</span><span class="p">,</span> <span class="s2">"g"</span><span class="p">:</span> <span class="n">g</span><span class="p">}</span>
-    <span class="n">time_functions</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>
+    <span class="n">time_functions_custom</span><span class="p">(</span><span class="n">fs</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>
 </pre></div>
 </div>
 <p>Output:</p>
@@ -9297,6 +9513,48 @@ right.</p></li>
 <span class="s1">'g'</span> <span class="n">took</span> <span class="mf">6.7192</span> <span class="n">secs</span>
 </pre></div>
 </div>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="prototools.time_functions_globals">
+<span class="sig-prename descclassname"><span class="pre">prototools.</span></span><span class="sig-name descname"><span class="pre">time_functions_globals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">functions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">()</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">kwargs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">setup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">globals</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lang</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#prototools.time_functions_globals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time the execution of multiple functions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>functions</strong> (<em>Union</em><em>[</em><em>List</em><em>[</em><em>Callable</em><em>]</em><em>, </em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Callable</em><em>]</em><em>]</em>) – Functions to be timed. Can be a list of functions or a
+dictionary with function names as keys.</p></li>
+<li><p><strong>args</strong> (<em>Optional</em><em>[</em><em>Tuple</em><em>[</em><em>Any</em><em>, </em><em>...</em><em>]</em><em>]</em>) – Positional arguments to pass
+to the functions.</p></li>
+<li><p><strong>kwargs</strong> (<em>Optional</em><em>[</em><em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em><em>]</em>) – Keyword arguments to pass to
+the functions.</p></li>
+<li><p><strong>setup</strong> (<em>str</em><em>, </em><em>optional</em>) – Setup code for necessary imports.
+Defaults to an empty string.</p></li>
+<li><p><strong>globals</strong> (<em>dict</em><em>, </em><em>optional</em>) – Global namespace. Defaults to None.</p></li>
+<li><p><strong>number</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of iterations for timing.
+Defaults to 1,000,000.</p></li>
+<li><p><strong>lang</strong> (<em>str</em><em>, </em><em>optional</em>) – Language for the output. Defaults to “en”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>    <span class="n">r</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="gp">... </span>        <span class="n">r</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">... </span>    <span class="k">return</span> <span class="n">r</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">time_functions_globals</span><span class="p">([</span><span class="n">f</span><span class="p">,</span> <span class="n">g</span><span class="p">],</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,),</span> <span class="nb">globals</span><span class="o">=</span><span class="nb">globals</span><span class="p">())</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt>Output:</dt><dd><p>‘f’ took 0.255712 secs
+‘g’ took 0.421514 secs</p>
+</dd>
+</dl>
 </dd></dl>
 <dl class="py function">
 <dt class="sig sig-object py" id="prototools.time_input">
@@ -9363,7 +9621,7 @@ the user’s input and returns the new value as the input.</p></li>
 </pre></div>
 </div>
 <p>Output:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Finished</span> <span class="s1">'f'</span> <span class="ow">in</span> <span class="mf">0.0289</span> <span class="n">secs</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Finished</span> <span class="s1">'f'</span> <span class="ow">in</span> <span class="mf">0.028945</span> <span class="n">secs</span>
 </pre></div>
 </div>
 </dd></dl>
